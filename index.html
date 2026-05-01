@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petales &amp; Epines</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-screen screen is-active" id="home-screen" aria-labelledby="home-title">
+        <div class="hero-art" aria-hidden="true">
+          <span class="petal petal-one"></span>
+          <span class="petal petal-two"></span>
+          <span class="petal petal-three"></span>
+          <span class="thorn thorn-one"></span>
+          <span class="thorn thorn-two"></span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Jeu de couple prive</p>
+          <h1 id="home-title">Petales &amp; Epines</h1>
+          <p class="hero-line">Une room intime pour provoquer les aveux doux, les defis chauds et les verites qui piquent juste assez.</p>
+          <button class="primary-button" id="enter-button" type="button">Entrer, votre partenaire vous attend</button>
+        </div>
+        <footer class="privacy-footer">
+          <span>&copy; 2026 Petales &amp; Epines</span>
+          <span>Les donnees des joueurs ne sont pas collectees.</span>
+        </footer>
+      </section>
+
+      <section class="profile-screen screen" id="profile-screen" aria-labelledby="profile-title">
+        <header class="top-bar">
+          <button class="ghost-button" data-back="home-screen" type="button">Retour</button>
+          <span>Petales &amp; Epines</span>
+        </header>
+
+        <div class="profile-layout">
+          <form class="profile-panel" id="profile-form">
+            <p class="eyebrow">Votre aura</p>
+            <h2 id="profile-title">Dites a la room qui vient jouer.</h2>
+
+            <label for="player-name">Nom</label>
+            <input id="player-name" name="player-name" type="text" placeholder="Ex: Maya" autocomplete="name" required>
+
+            <label for="player-age">Age</label>
+            <input id="player-age" name="player-age" type="number" min="18" max="99" placeholder="18+" required>
+
+            <label for="zodiac-select">Signe astrologique</label>
+            <select id="zodiac-select" name="zodiac-select" required></select>
+
+            <div class="selected-sign" id="selected-sign" aria-live="polite"></div>
+
+            
+            <button class="primary-button" type="submit">Continuer</button>
+          </form>
+
+          <section class="zodiac-gallery" aria-label="Signes astrologiques">
+            <div class="zodiac-grid" id="zodiac-grid"></div>
+          </section>
+        </div>
+        <footer class="privacy-footer inline-footer">
+          <span>&copy; 2026 Petales &amp; Epines</span>
+          <span>Les donnees des joueurs ne sont pas collectees.</span>
+        </footer>
+      </section>
+
+      <section class="choice-screen screen" id="choice-screen" aria-labelledby="choice-title">
+        <header class="top-bar">
+          <button class="ghost-button" data-back="profile-screen" type="button">Profil</button>
+          <span id="choice-player-label">Choix de salle</span>
+        </header>
+
+        <div class="choice-layout">
+          <section class="choice-panel">
+            <p class="eyebrow">Salle privee</p>
+            <h2 id="choice-title">Voulez-vous creer une salle ou rejoindre votre partenaire ?</h2>
+
+            <div class="choice-actions">
+              <button class="action-card petale-card" id="create-room-button" type="button">
+                <span>Nouvelle salle</span>
+                <strong>Creer</strong>
+              </button>
+              <form class="join-card" id="join-room-form">
+                <label for="join-room-id">ID de la salle</label>
+                <input id="join-room-id" name="join-room-id" type="text" maxlength="32" placeholder="Ex: mon25cmxKM6DPG8W" autocomplete="off" required>
+                <button class="secondary-button" type="submit">Rejoindre</button>
+              </form>
+            </div>
+          </section>
+
+          <aside class="player-card" id="choice-player-card" aria-label="Profil du joueur"></aside>
+        </div>
+        <footer class="privacy-footer inline-footer">
+          <span>&copy; 2026 Petales &amp; Epines</span>
+          <span>Les donnees des joueurs ne sont pas collectees.</span>
+        </footer>
+      </section>
+
+      <section class="room-options-screen screen" id="room-options-screen" aria-labelledby="room-options-title">
+        <header class="top-bar">
+          <button class="ghost-button" data-back="choice-screen" type="button">Retour</button>
+          <span>Type de salle</span>
+        </header>
+
+        <div class="room-options-layout">
+          <section class="room-options-panel">
+            <p class="eyebrow">Intensité du jeu</p>
+            <h2 id="room-options-title">Choisissez l'ambiance de votre partie</h2>
+
+            <div class="room-options-grid">
+              <button class="room-option-card normal-option" id="create-normal-room" type="button">
+                <div class="room-option-content">
+                  <strong>Pétale et Sourire</strong>
+                  <em>Douces effleures et conversations intimes</em>
+                  <p>Parfait pour une première approche en douceur, avec des actions subtiles et des confidences délicates.</p>
+                </div>
+              </button>
+              <button class="room-option-card hot-option" id="create-hot-room" type="button">
+                <div class="room-option-content">
+                  <strong>Désir Sensuel</strong>
+                  <em>Désirs brûlants et confessions audacieuses</em>
+                  <p>Pour les plus audacieux, avec des défis provocants et des vérités intenses sans filtre.</p>
+                </div>
+              </button>
+            </div>
+          </section>
+
+          <aside class="player-card" id="room-options-player-card" aria-label="Profil du joueur"></aside>
+        </div>
+        <footer class="privacy-footer inline-footer">
+          <span>&copy; 2026 Petales &amp; Epines</span>
+          <span>Les donnees des joueurs ne sont pas collectees.</span>
+        </footer>
+      </section>
+
+      <section class="room-screen screen" id="room-screen" aria-labelledby="room-title">
+        <header class="top-bar">
+          <button class="ghost-button" data-back="profile-screen" type="button">Profil</button>
+          <div class="room-mini-code">
+            <span id="room-player-label">Room privee</span>
+            <button class="mini-code-button" id="copy-room" type="button">
+              ID <strong id="room-code">----</strong>
+            </button>
+          </div>
+        </header>
+
+        <div class="room-layout">
+          <section class="room-main">
+            <p class="eyebrow">Gaming room</p>
+            <h2 id="room-title">La table est prete.</h2>
+
+            <div class="table-arena">
+              <div class="bottle-table" id="bottle-table" aria-label="Table des joueurs">
+                <button class="bottle" id="spin-button" type="button" aria-label="Tourner la bouteille">
+                  <span></span>
+                </button>
+                <div class="seats" id="seats"></div>
+              </div>
+              <div class="table-actions">
+                <button class="primary-button" id="spin-room-button" type="button">Spin la bouteille</button>
+                <p id="room-status">En attente des joueurs.</p>
+              </div>
+            </div>
+
+            <article class="prompt-card" id="prompt-card">
+              <span>Premier tour</span>
+              <p>Spin la bouteille. Elle choisira un joueur et tirera Action ou Verite.</p>
+            </article>
+
+            <div class="approval-panel" id="approval-panel"></div>
+          </section>
+
+          <aside class="room-side-panel">
+            <section class="players-panel" aria-labelledby="players-title">
+              <h3 id="players-title">Joueurs dans la salle</h3>
+              <div class="players-list" id="players-list"></div>
+            </section>
+            <section class="compatibility-panel" aria-labelledby="compatibility-title">
+              <h3 id="compatibility-title">Connexion astro</h3>
+              <div id="compatibility-list"></div>
+            </section>
+            <section class="chat-panel" aria-labelledby="chat-title">
+              <h3 id="chat-title">Chat de la salle</h3>
+              <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+              <form class="chat-form" id="chat-form">
+                <input id="chat-input" type="text" maxlength="1200" placeholder="Message..." autocomplete="off">
+                <div class="chat-tools">
+                  <label class="icon-button file-chip" for="chat-file" title="Ajouter un media" aria-label="Ajouter un media">📎</label>
+                  <button class="icon-button record-button" id="chat-record-button" type="button" title="Enregistrer un audio" aria-label="Enregistrer un audio">🎙️</button>
+                  <button class="icon-button send-button" type="submit" title="Envoyer" aria-label="Envoyer">➤</button>
+                </div>
+                <input id="chat-file" type="file" accept="image/*,video/*,audio/*,.mp3,.wav,.ogg,.m4a,.aac,.flac,.opus,.weba">
+              </form>
+              <div class="media-preview" id="media-preview"></div>
+            </section>
+          </aside>
+        </div>
+        <footer class="privacy-footer inline-footer">
+          <span>&copy; 2026 Petales &amp; Epines</span>
+          <span>Les donnees des joueurs ne sont pas collectees.</span>
+        </footer>
+      </section>
+    </main>
+    <audio id="ambient-audio" loop preload="auto" hidden></audio>
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" title="Activer ou couper le son d'ambiance">🔇 Son OFF</button>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
