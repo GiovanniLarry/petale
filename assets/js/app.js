@@ -1,108 +1,218 @@
-// Contenu pour le mode Pétale et Sourire (normal) - questions douces et romantiques
+// Contenu pour le mode Pétale et Sourire (normal) - 50 Vérités explicites
 const normalModeContent = {
   truths: [
-    "Quel est ton meilleur souvenir d'enfance ?",
-    "Quelle est la chose la plus gentille que quelqu'un t'ait faite ?",
-    "As-tu déjà eu un coup de foudre ?",
-    "Quelle est ta qualité préférée chez une personne ?",
-    "Quel est ton rêve le plus cher ?",
-    "Qu'est-ce qui te rend vraiment heureux(se) ?",
-    "As-tu déjà écrit une lettre d'amour ?",
-    "Quel est ton film romantique préféré ?",
-    "Quelle est la plus belle chose que tu aies vue ?",
-    "As-tu déjà fait un geste romantique inattendu ?",
-    "Quel est ton endroit préféré pour te détendre ?",
-    "Qu'est-ce qui te fait rire aux éclats ?",
-    "As-tu déjà dansé sous la pluie ?",
-    "Quelle est ta chanson d'amour préférée ?",
-    "Quel est le meilleur conseil que tu aies reçu ?",
-    "As-tu déjà tenu quelqu'un par la main pour la première fois ?",
-    "Quelle est ta saison préférée et pourquoi ?",
-    "Qu'est-ce qui te met de bonne humeur ?",
-    "As-tu déjà fait un compliment sincère à un inconnu ?",
-    "Quel est ton plat préféré qui te réconforte ?",
-    "As-tu déjà partagé un secret important ?",
-    "Quelle est la chose la plus courageuse que tu aies faite ?",
-    "As-tu déjà pleuré de joie ?",
-    "Quel est ton souvenir préféré avec tes amis ?",
-    "Qu'est-ce qui te rend nerveux(se) de manière adorable ?",
-    "As-tu déjà fait une surprise à quelqu'un ?",
-    "Quelle est ta fleur préférée ?",
-    "As-tu déjà regardé les étoiles toute la nuit ?",
-    "Quel est le plus beau coucher de soleil que tu aies vu ?",
-    "As-tu déjà écrit un poème pour quelqu'un ?",
-    "Quelle est ta façon préférée de dire 'je t'aime' ?",
-    "As-tu déjà fait un vœu qui s'est réalisé ?",
-    "Quel est ton animal préféré et pourquoi ?",
-    "As-tu déjà eu une conversation qui a changé ta vie ?",
-    "Quelle est la chose la plus douce que quelqu'un t'ait dite ?",
-    "As-tu déjà offert un cadeau fait main ?",
-    "Quel est ton parfum préféré ?",
-    "As-tu déjà fait une promesse importante ?",
-    "Quelle est ta couleur préférée et pourquoi ?",
-    "As-tu déjà eu le souffle coupé par la beauté de quelque chose ?",
-    "Quel est ton livre préféré qui t'inspire ?",
-    "As-tu déjà fait quelque chose de spontané et merveilleux ?",
-    "Quelle est la chose la plus romantique que tu puisses imaginer ?",
-    "As-tu déjà ressenti un lien instantané avec quelqu'un ?",
-    "Quel est le moment le plus précieux de ta vie ?",
-    "As-tu déjà fait un rêve qui s'est réalisé ?",
-    "Qu'est-ce qui te fait sentir vivant(e) ?",
-    "Si tu pouvais voyager n'importe où, où irais-tu ?",
-    "As-tu déjà dit 'je t'aime' et vraiment senti chaque mot ?"
+    "Décris en détail la dernière fois où tu t'es doigtée en pensant à une bite.",
+    "Quel est le porno le plus hard que tu as regardé récemment ?",
+    "As-tu déjà joui en te faisant sodomiser ?",
+    "Quelle est la chose la plus sale que tu aies déjà faite avec ta chatte ?",
+    "As-tu déjà avalé du sperme et aimé ça ?",
+    "Quel est ton fantasme le plus cochon avec un mec dominant ?",
+    "As-tu déjà été prise par deux mecs en même temps (même en rêve) ?",
+    "Décris comment tu veux que je te baise la première fois (très détaillé).",
+    "As-tu déjà eu un squirting ? Comment c'est arrivé ?",
+    "Quel est le plus gros objet que tu as mis dans ta chatte ?",
+    "As-tu déjà fait du dirty talk en criant des gros mots ?",
+    "Quelle est ta position préférée pour te faire démonter violemment ?",
+    "As-tu déjà été attachée et utilisée comme une salope ?",
+    "Quel mot te fait le plus mouiller : pute, salope, chienne ?",
+    "As-tu déjà joui rien qu'avec une bite dans ton cul ?",
+    "Décris ton dernier orgasme en te touchant.",
+    "As-tu déjà envoyé une vidéo de toi en train de te doigter ?",
+    "Quel est ton plus grand fantasme de gangbang ?",
+    "As-tu déjà léché un cul ?",
+    "Quelle est la chose la plus humiliante qui t'excite ?",
+    "As-tu déjà été baisée en public ?",
+    "Quel est le meilleur coup que tu as reçu ?",
+    "As-tu déjà simulé juste pour faire plaisir ?",
+    "Décris ta chatte en ce moment (mouillée, gonflée…).",
+    "As-tu déjà eu envie d'être pissée dessus ?",
+    "Quel est ton kink le plus tabou ?",
+    "As-tu déjà fait du sexe anal sans lubrifiant ?",
+    "Quelle bite t'a le plus remplie ?",
+    "As-tu déjà crié pendant l'orgasme ?",
+    "Quel est le nombre maximum d'orgasmes que tu as eu en une séance ?",
+    "As-tu déjà été prise par derrière en levrette comme une chienne ?",
+    "Décris comment tu suces une bite.",
+    "As-tu déjà avalé après une gorge profonde ?",
+    "Quel est ton plus gros turn-on : douleur, humiliation ou soumission ?",
+    "As-tu déjà été fessée jusqu'à avoir des marques ?",
+    "Quelle est la phrase la plus sale que tu veuilles que je te dise ?",
+    "As-tu déjà joui en te faisant étrangler ?",
+    "Décris ton fantasme de breeding (se faire remplir).",
+    "As-tu déjà été utilisée comme un sextoy ?",
+    "Quel est le plus long temps où tu as gardé du sperme en toi ?",
+    "As-tu déjà fait du cuckold ou voulu en faire ?",
+    "Quelle est ta limite hard que tu veux franchir avec moi ?",
+    "As-tu déjà eu du sexe pendant tes règles ?",
+    "Décris comment tu veux que je t'insulte pendant qu'on baise.",
+    "As-tu déjà été double pénétrée (doigts ou jouets) ?",
+    "Quel est ton record de temps à te masturber ?",
+    "As-tu déjà pissé de plaisir pendant un orgasme ?",
+    "Quelle est la chose la plus perverse que tu veuilles essayer ?",
+    "As-tu déjà été dominée complètement par un mec ?",
+    "Si on baise ce soir, quelle est la première chose que tu veux que je te fasse ?"
   ],
   actions: [
-    "Fais un compliment sincère à quelqu'un dans la pièce.",
-    "Prends la main de quelqu'un pendant 30 secondes.",
-    "Fais un câlin à quelqu'un de ton choix.",
-    "Chuchote un secret gentil à l'oreille de quelqu'un.",
-    "Fais une imitation amusante d'un animal.",
-    "Chante une chanson que tu aimes pendant 20 secondes.",
-    "Fais une danse lente et gracieuse.",
-    "Dessine un cœur dans l'air avec tes mains.",
-    "Fais un massage doux des épaules pendant 1 minute.",
-    "Raconte une histoire drôle qui t'est arrivée.",
-    "Fais un vœu à voix haute.",
-    "Prends une pose de yoga relaxante.",
-    "Fais un bruit d'animal mignon.",
-    "Écris un mot gentil sur ta main et montre-le.",
-    "Fais un sourire le plus sincère possible.",
-    "Fais une pirouette (si tu peux).",
-    "Fais un geste de théâtre romantique.",
-    "Chuchote 'merci' à quelqu'un.",
-    "Fais un signe de paix.",
-    "Fais une pause de méditation de 30 secondes.",
-    "Fais un compliment sur la tenue de quelqu'un.",
-    "Fais un geste de gratitude.",
-    "Prends une pose de super-héros/héroïne.",
-    "Fais un bruit d'applaudissement pour quelqu'un.",
-    "Fais une expression de joie exagérée.",
-    "Fais un signe de 'okay' avec style.",
-    "Fais un mouvement de danse lent.",
-    "Fais un clin d'œil charmant.",
-    "Fais un geste de 'c'est génial'.",
-    "Fais une pose de statue pendant 15 secondes.",
-    "Fais un son de 'wow' impressionné.",
-    "Fais un geste de 'viens ici'.",
-    "Fais une expression de 'je suis d'accord'.",
-    "Fais un mouvement de vague amical.",
-    "Fais un geste de 'bravo'.",
-    "Fais une expression de 'hmm... intéressant'.",
-    "Fais un signe de 'secret'.",
-    "Fais un mouvement de 'c'est parti'.",
-    "Fais un geste de 'calme-toi'.",
-    "Fais une expression de 'je t'écoute'.",
-    "Fais un signe de 'réussite'.",
-    "Fais un mouvement de 'c'est magnifique'.",
-    "Fais un geste de 'amitié'.",
-    "Fais une expression de 'je suis fier/fière'.",
-    "Fais un signe de 'paix et amour'.",
-    "Fais un mouvement de 'ensemble'.",
-    "Finis par un grand sourire chaleureux à tout le monde."
+    "Enlève tout et reste complètement nue pendant 5 tours.",
+    "Mets-toi à quatre pattes, écarte les fesses et montre ton cul à la caméra.",
+    "Doigte-toi profondément en gémissant mon nom pendant 60 secondes.",
+    "Envoie une vidéo de toi en train de sucer un objet comme une bite.",
+    "Fesse-toi fort 10 fois en disant « Je suis ta salope ».",
+    "Masturbe-toi jusqu'à l'orgasme et montre-le en vidéo.",
+    "Mets deux doigts dans ta chatte et baise-toi fort devant moi.",
+    "Lèche tes doigts après les avoir mis dans ta chatte.",
+    "Mets-toi nue, écarte les jambes et montre à quel point tu es mouillée.",
+    "Fais une gorge profonde sur un objet et filme-le.",
+    "Twerk nue en écartant bien les fesses.",
+    "Enfonce un objet dans ta chatte et baise-toi pendant 1 minute.",
+    "Dis « Je suis une sale chienne en chaleur » en te touchant.",
+    "Fesse-toi les seins et montre les marques.",
+    "Mets un doigt dans ton cul et joue avec.",
+    "Envoie une photo de ta chatte bien ouverte.",
+    "Baise-toi avec deux doigts en criant mon nom.",
+    "Lèche ton jus sur tes doigts après t'être doigtée.",
+    "Mets-toi en position de soumission (à genoux, tête baissée).",
+    "Filme-toi en train de te doigter le cul.",
+    "Étrangle-toi légèrement en te masturbant.",
+    "Fais un squirting si tu peux et montre-le.",
+    "Envoie une vidéo où tu dis des phrases très sales sur ce que tu veux que je te fasse.",
+    "Mets-toi nue et danse comme une stripteaseuse.",
+    "Fesse-toi jusqu'à ce que ton cul soit rouge.",
+    "Baise-toi avec un objet de chez toi et filme.",
+    "Montre-moi comment tu suces une bite en détail.",
+    "Mets-toi en levrette et twerk sur un doigt.",
+    "Dis « Baise-moi plus fort papa » en te touchant.",
+    "Enfonce un objet dans ton cul et garde-le.",
+    "Masturbe-toi en regardant une vidéo porno et commente.",
+    "Écarte ta chatte avec les doigts et reste comme ça 30 secondes.",
+    "Fait un cumshot imaginaire sur ton visage et montre.",
+    "Baise-toi violemment avec les doigts jusqu'à jouir.",
+    "Envoie une vidéo de toi en train de gémir comme une salope.",
+    "Mets tes seins à l'air et pince tes tétons fort.",
+    "Joue avec ton clitoris jusqu'à trembler.",
+    "Filme-toi en train de dire « Je veux ta grosse bite dans mon cul ».",
+    "Reste à genoux nue et lèche l'écran.",
+    "Enfonce trois doigts dans ta chatte.",
+    "Fesse-toi le cul très fort 20 fois.",
+    "Montre-moi ton anus en l'écartant.",
+    "Masturbe-toi en m'insultant si je ne te baise pas.",
+    "Fais un deepthroat sur le plus gros objet que tu as.",
+    "Baise-toi en levrette devant la caméra.",
+    "Crie mon nom en jouissant.",
+    "Mets du lubrifiant (ou de la salive) et joue avec ton cul.",
+    "Envoie une vidéo où tu te fais jouir deux fois.",
+    "Reste nue et dis « Je suis ta pute personnelle » 10 fois.",
+    "Filme-toi en train de jouir en pensant à ma bite."
   ]
 };
 
-
+// Contenu pour le mode Désir Sensuel (hot) - questions explicites et hard
+const hotModeContent = {
+  truths: [
+    "Décris en détail la dernière fois où tu t'es doigtée en pensant à une bite.",
+    "Quel est le porno le plus hard que tu as regardé récemment ?",
+    "As-tu déjà joui en te faisant sodomiser ?",
+    "Quelle est la chose la plus sale que tu aies déjà faite avec ta chatte ?",
+    "As-tu déjà avalé du sperme et aimé ça ?",
+    "Quel est ton fantasme le plus cochon avec un mec dominant ?",
+    "As-tu déjà été prise par deux mecs en même temps (même en rêve) ?",
+    "Décris comment tu veux que je te baise la première fois (très détaillé).",
+    "As-tu déjà eu un squirting ? Comment c'est arrivé ?",
+    "Quel est le plus gros objet que tu as mis dans ta chatte ?",
+    "As-tu déjà fait du dirty talk en criant des gros mots ?",
+    "Quelle est ta position préférée pour te faire démonter violemment ?",
+    "As-tu déjà été attachée et utilisée comme une salope ?",
+    "Quel mot te fait le plus mouiller : pute, salope, chienne ?",
+    "As-tu déjà joui rien qu'avec une bite dans ton cul ?",
+    "Décris ton dernier orgasme en te touchant.",
+    "As-tu déjà envoyé une vidéo de toi en train de te doigter ?",
+    "Quel est ton plus grand fantasme de gangbang ?",
+    "As-tu déjà léché un cul ?",
+    "Quelle est la chose la plus humiliante qui t'excite ?",
+    "As-tu déjà été baisée en public ?",
+    "Quel est le meilleur coup que tu as reçu ?",
+    "As-tu déjà simulé juste pour faire plaisir ?",
+    "Décris ta chatte en ce moment (mouillée, gonflée…).",
+    "As-tu déjà eu envie d'être pissée dessus ?",
+    "Quel est ton kink le plus tabou ?",
+    "As-tu déjà fait du sexe anal sans lubrifiant ?",
+    "Quelle bite t'a le plus remplie ?",
+    "As-tu déjà crié pendant l'orgasme ?",
+    "Quel est le nombre maximum d'orgasmes que tu as eu en une séance ?",
+    "As-tu déjà été prise par derrière en levrette comme une chienne ?",
+    "Décris comment tu suces une bite.",
+    "As-tu déjà avalé après une gorge profonde ?",
+    "Quel est ton plus gros turn-on : douleur, humiliation ou soumission ?",
+    "As-tu déjà été fessée jusqu'à avoir des marques ?",
+    "Quelle est la phrase la plus sale que tu veuilles que je te dise ?",
+    "As-tu déjà joui en te faisant étrangler ?",
+    "Décris ton fantasme de breeding (se faire remplir).",
+    "As-tu déjà été utilisée comme un sextoy ?",
+    "Quel est le plus long temps où tu as gardé du sperme en toi ?",
+    "As-tu déjà fait du cuckold ou voulu en faire ?",
+    "Quelle est ta limite hard que tu veux franchir avec moi ?",
+    "As-tu déjà eu du sexe pendant tes règles ?",
+    "Décris comment tu veux que je t'insulte pendant qu'on baise.",
+    "As-tu déjà été double pénétrée (doigts ou jouets) ?",
+    "Quel est ton record de temps à te masturber ?",
+    "As-tu déjà pissé de plaisir pendant un orgasme ?",
+    "Quelle est la chose la plus perverse que tu veuilles essayer ?",
+    "As-tu déjà été dominée complètement par un mec ?",
+    "Si on baise ce soir, quelle est la première chose que tu veux que je te fasse ?"
+  ],
+  actions: [
+    "Enlève tout et reste complètement nue pendant 5 tours.",
+    "Mets-toi à quatre pattes, écarte les fesses et montre ton cul à la caméra.",
+    "Doigte-toi profondément en gémissant mon nom pendant 60 secondes.",
+    "Envoie une vidéo de toi en train de sucer un objet comme une bite.",
+    "Fesse-toi fort 10 fois en disant « Je suis ta salope ».",
+    "Masturbe-toi jusqu'à l'orgasme et montre-le en vidéo.",
+    "Mets deux doigts dans ta chatte et baise-toi fort devant moi.",
+    "Lèche tes doigts après les avoir mis dans ta chatte.",
+    "Mets-toi nue, écarte les jambes et montre à quel point tu es mouillée.",
+    "Fais une gorge profonde sur un objet et filme-le.",
+    "Twerk nue en écartant bien les fesses.",
+    "Enfonce un objet dans ta chatte et baise-toi pendant 1 minute.",
+    "Dis « Je suis une sale chienne en chaleur » en te touchant.",
+    "Fesse-toi les seins et montre les marques.",
+    "Mets un doigt dans ton cul et joue avec.",
+    "Envoie une photo de ta chatte bien ouverte.",
+    "Baise-toi avec deux doigts en criant mon nom.",
+    "Lèche ton jus sur tes doigts après t'être doigtée.",
+    "Mets-toi en position de soumission (à genoux, tête baissée).",
+    "Filme-toi en train de te doigter le cul.",
+    "Étrangle-toi légèrement en te masturbant.",
+    "Fais un squirting si tu peux et montre-le.",
+    "Envoie une vidéo où tu dis des phrases très sales sur ce que tu veux que je te fasse.",
+    "Mets-toi nue et danse comme une stripteaseuse.",
+    "Fesse-toi jusqu'à ce que ton cul soit rouge.",
+    "Baise-toi avec un objet de chez toi et filme.",
+    "Montre-moi comment tu suces une bite en détail.",
+    "Mets-toi en levrette et twerk sur un doigt.",
+    "Dis « Baise-moi plus fort papa » en te touchant.",
+    "Enfonce un objet dans ton cul et garde-le.",
+    "Masturbe-toi en regardant une vidéo porno et commente.",
+    "Écarte ta chatte avec les doigts et reste comme ça 30 secondes.",
+    "Fait un cumshot imaginaire sur ton visage et montre.",
+    "Baise-toi violemment avec les doigts jusqu'à jouir.",
+    "Envoie une vidéo de toi en train de gémir comme une salope.",
+    "Mets tes seins à l'air et pince tes tétons fort.",
+    "Joue avec ton clitoris jusqu'à trembler.",
+    "Filme-toi en train de dire « Je veux ta grosse bite dans mon cul ».",
+    "Reste à genoux nue et lèche l'écran.",
+    "Enfonce trois doigts dans ta chatte.",
+    "Fesse-toi le cul très fort 20 fois.",
+    "Montre-moi ton anus en l'écartant.",
+    "Masturbe-toi en m'insultant si je ne te baise pas.",
+    "Fais un deepthroat sur le plus gros objet que tu as.",
+    "Baise-toi en levrette devant la caméra.",
+    "Crie mon nom en jouissant.",
+    "Mets du lubrifiant (ou de la salive) et joue avec ton cul.",
+    "Envoie une vidéo où tu te fais jouir deux fois.",
+    "Reste nue et dis « Je suis ta pute personnelle » 10 fois.",
+    "Filme-toi en train de jouir en pensant à ma bite."
+  ]
+};
 
 // Fonction pour mélanger un tableau (Fisher-Yates shuffle)
 function shuffleArray(array) {
@@ -259,6 +369,7 @@ async function api(url, options = {}) {
 
 const STORAGE_KEY = "petales-epines-session";
 const SOUND_PREF_KEY = "petales-epines-sound-enabled";
+const MUSIC_STATE_KEY = "petales-epines-music-state";
 const AMBIENT_AUDIO_PLAYLIST = [
   "assets/audio/bg-1.mp3",
   "assets/audio/bg-2.mp3",
@@ -328,8 +439,7 @@ const elements = {
   roomStatus: document.querySelector("#room-status"),
   promptCard: document.querySelector("#prompt-card"),
   approvalPanel: document.querySelector("#approval-panel"),
-  playersList: document.querySelector("#players-list"),
-  compatibilityList: document.querySelector("#compatibility-list"),
+    compatibilityList: document.querySelector("#compatibility-list"),
   chatForm: document.querySelector("#chat-form"),
   chatInput: document.querySelector("#chat-input"),
   chatFile: document.querySelector("#chat-file"),
@@ -338,7 +448,29 @@ const elements = {
   chatMessages: document.querySelector("#chat-messages"),
   roomPlayerLabel: document.querySelector("#room-player-label"),
   ambientAudio: document.querySelector("#ambient-audio"),
-  soundToggle: document.querySelector("#sound-toggle")
+  soundToggle: document.querySelector("#sound-toggle"),
+  centerToast: document.querySelector("#center-toast"),
+  profileIcon: document.querySelector("#profile-icon"),
+  userCount: document.querySelector("#user-count"),
+  usersPopup: document.querySelector("#users-popup"),
+  usersPopupBackdrop: document.querySelector("#users-popup-backdrop"),
+  usersPopupClose: document.querySelector("#users-popup-close"),
+  usersPopupContent: document.querySelector("#users-popup-content"),
+  helpIcon: document.querySelector("#help-icon"),
+  helpPopup: document.querySelector("#help-popup"),
+  helpPopupBackdrop: document.querySelector("#help-popup-backdrop"),
+  helpPopupClose: document.querySelector("#help-popup-close"),
+  helpCopyRoom: document.querySelector("#help-copy-room"),
+  loveCompatibilityIndicator: document.querySelector(".love-compatibility-indicator"),
+  loveCompatibilityFill: document.querySelector(".love-compatibility-fill"),
+  loveCompatibilityPercentage: document.querySelector(".love-compatibility-percentage"),
+  loveCompatibilityPopup: document.querySelector("#love-compatibility-popup"),
+  loveCompatibilityPopupBackdrop: document.querySelector("#love-compatibility-popup-backdrop"),
+  loveCompatibilityPopupClose: document.querySelector("#love-compatibility-popup-close"),
+  sexCompatibilityIndicator: document.querySelector(".sex-compatibility-indicator"),
+  sexCompatibilityPopup: document.querySelector("#sex-compatibility-popup"),
+  sexCompatibilityPopupBackdrop: document.querySelector("#sex-compatibility-popup-backdrop"),
+  sexCompatibilityPopupClose: document.querySelector("#sex-compatibility-popup-close")
 };
 
 let lastAnimatedRoundId = null;
@@ -349,11 +481,6 @@ let revealTimer = null;
 let lastScreenshotNotice = 0;
 let lastRenderedChatSignature = "";
 let spinRequestInFlight = false;
-let mediaRecorder = null;
-let recorderStream = null;
-let recorderChunks = [];
-let isRecording = false;
-let recordedClip = null;
 let customPromptDraft = "";
 let customPromptRoundId = "";
 let soundEnabled = false;
@@ -369,7 +496,6 @@ let soundAutoHideTimer = null;
 
 // Wait for DOM to be ready
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM loaded, initializing app...");
   initAmbientAudio();
   
   // Preload zodiac images to prevent flickering
@@ -397,32 +523,37 @@ document.addEventListener("DOMContentLoaded", () => {
   // Handle room option selections
   if (elements.createNormalRoom) {
     elements.createNormalRoom.addEventListener("click", async () => {
-      console.log("Normal room selected");
+      console.log("🌸 Normal room button clicked");
+      console.log("👤 Player payload:", playerPayload());
       state.gameMode = 'normal';
+      console.log("📊 Game mode set to:", state.gameMode);
       try {
+        console.log("📡 Sending API request to create normal room...");
         const room = await api("/api/rooms", {
           method: "POST",
           body: { player: { ...playerPayload(), gameMode: "normal" } }
         });
-        console.log("Normal room created:", room);
+        console.log("✅ Normal room created:", room);
         enterRoom(room, "created");
       } catch (error) {
-        console.error("Error creating normal room:", error);
+        console.error("❌ Error creating normal room:", error);
       }
     });
   }
 
   if (elements.createHotRoom) {
     elements.createHotRoom.addEventListener("click", async () => {
-      console.log("🔥 Hot room selected - MODE HOT ACTIVÉ");
+      console.log("🔥 Hot room button clicked");
+      console.log("👤 Player payload:", playerPayload());
       state.gameMode = 'hot';
-      console.log("📊 state.gameMode défini à:", state.gameMode);
+      console.log("📊 Game mode set to:", state.gameMode);
       try {
+        console.log("📡 Sending API request to create hot room...");
         const room = await api("/api/rooms", {
           method: "POST",
           body: { player: { ...playerPayload(), gameMode: "hot" } }
         });
-        console.log("🏠 Hot room created:", room);
+        console.log("✅ Hot room created:", room);
         enterRoom(room, "created");
       } catch (error) {
         console.error("❌ Error creating hot room:", error);
@@ -488,13 +619,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.joinRoomForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    console.log("📝 Join room form submitted");
     const roomId = normalizeRoomId(elements.joinRoomId.value);
+    console.log(" Room ID entered:", roomId);
+    
     if (!roomId) {
+      console.log(" Invalid room ID");
       elements.joinRoomId.setCustomValidity("Entrez un ID de salle valide.");
       elements.joinRoomId.reportValidity();
       return;
     }
 
+    console.log(" Valid room ID, attempting to join...");
     elements.joinRoomId.setCustomValidity("");
     await joinRoom(roomId, "joined");
   });
@@ -504,21 +640,386 @@ document.addEventListener("DOMContentLoaded", () => {
   elements.spinRoomButton.addEventListener("click", spinBottle);
   elements.chatForm.addEventListener("submit", sendChatMessage);
   elements.chatFile.addEventListener("change", onMediaFileSelected);
-  elements.chatRecordButton?.addEventListener("click", toggleAudioRecording);
-  document.addEventListener("keydown", detectScreenshotKey);
+    document.addEventListener("keydown", detectScreenshotKey);
+  
+  // Profile icon and popup functionality
+  elements.profileIcon.addEventListener("click", showUsersPopup);
+  elements.usersPopupClose.addEventListener("click", hideUsersPopup);
+  elements.usersPopupBackdrop.addEventListener("click", hideUsersPopup);
+
+  // Help icon and popup functionality
+  elements.helpIcon.addEventListener("click", showHelpPopup);
+  elements.helpPopupClose.addEventListener("click", hideHelpPopup);
+  elements.helpPopupBackdrop.addEventListener("click", hideHelpPopup);
+  elements.helpCopyRoom.addEventListener("click", () => copyText(state.roomId, elements.helpCopyRoom, "ID copié"));
+
+  // Love compatibility popup functionality
+  elements.loveCompatibilityIndicator?.addEventListener("click", showLoveCompatibilityPopup);
+  elements.loveCompatibilityPopupClose?.addEventListener("click", hideLoveCompatibilityPopup);
+  elements.loveCompatibilityPopupBackdrop?.addEventListener("click", hideLoveCompatibilityPopup);
+
+  // Sex compatibility popup functionality
+  elements.sexCompatibilityIndicator?.addEventListener("click", showSexCompatibilityPopup);
+  elements.sexCompatibilityPopupClose?.addEventListener("click", hideSexCompatibilityPopup);
+  elements.sexCompatibilityPopupBackdrop?.addEventListener("click", hideSexCompatibilityPopup);
 });
+
+function showUsersPopup() {
+  if (!elements.usersPopup || !elements.usersPopupBackdrop) return;
+  elements.usersPopup.hidden = false;
+  elements.usersPopupBackdrop.hidden = false;
+  renderUsersPopup();
+}
+
+function hideUsersPopup() {
+  if (!elements.usersPopup || !elements.usersPopupBackdrop) return;
+  elements.usersPopup.hidden = true;
+  elements.usersPopupBackdrop.hidden = true;
+}
+
+function renderUsersPopup() {
+  if (!elements.usersPopupContent || !state.room) return;
+
+  const players = state.room.players || [];
+  elements.userCount.textContent = players.length;
+
+  // Add astro connection section if there are multiple players
+  const isMobile = window.innerWidth <= 620;
+  let astroSection = "";
+
+  if (isMobile && players.length > 1 && state.player) {
+    const others = players.filter(player => player.id !== state.player?.id);
+    if (others.length > 0) {
+      const other = others[0]; // Get first other player for mobile
+      const { reading, score, lengthLabel } = compatibilityScore(state.player.sign.id, other.signId);
+      
+      astroSection = `
+        <div class="astro-connection-section">
+          <h4> Connexion Astro</h4>
+          <div class="astro-compatibility">
+            <strong>${escapeHtml(state.player.sign.name)} + ${escapeHtml(other.signName || "")}</strong>
+            <p class="astro-reading">${escapeHtml(reading)}</p>
+            <div class="match-meter" aria-hidden="true">
+              <div class="match-meter-fill" style="width:${score}%"></div>
+            </div>
+            <div class="match-meta">
+              <span class="match-score">${score}%</span>
+              <span class="match-length">${escapeHtml(lengthLabel)}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  elements.usersPopupContent.innerHTML = `
+    ${astroSection}
+    <div class="users-list">
+      ${players.map(player => `
+        <article class="mini-player ${player.id === state.player?.id ? "is-you" : ""}" 
+                 style="--sign-a: ${player.sign?.colors?.[0] || "#ff477e"}; --sign-b: ${player.sign?.colors?.[1] || "#8f1535"}">
+          <span class="mini-avatar">${player.sign?.glyph || "👤"}</span>
+          <div>
+            <strong>${escapeHtml(player.name)}</strong>
+            <p>${player.age} ans - ${player.sign?.name || "Inconnu"}</p>
+            <small>${player.id === state.player?.id ? "Vous" : "Partenaire"} - ${player.penalties || 0} pénalité${player.penalties !== 1 ? "s" : ""}</small>
+          </div>
+        </article>
+      `).join("")}
+    </div>
+  `;
+}
+
+function showHelpPopup() {
+  if (!elements.helpPopup || !elements.helpPopupBackdrop) return;
+  elements.helpPopup.hidden = false;
+  elements.helpPopupBackdrop.hidden = false;
+}
+
+function hideHelpPopup() {
+  if (!elements.helpPopup || !elements.helpPopupBackdrop) return;
+  elements.helpPopup.hidden = true;
+  elements.helpPopupBackdrop.hidden = true;
+}
+
+function showSexCompatibilityPopup() {
+  if (!elements.sexCompatibilityPopup || !elements.sexCompatibilityPopupBackdrop || !state.room) return;
+  
+  const players = state.room.players || [];
+  const others = players.filter(player => player.id !== state.player?.id);
+  
+  if (others.length === 0) {
+    return;
+  }
+  
+  const other = others[0];
+  const { score, reading, lengthLabel } = sexCompatibilityScore(state.player.sign.id, other.signId);
+  
+  // Update popup content
+  document.getElementById("your-sign").textContent = state.player.sign.name;
+  document.getElementById("partner-sign").textContent = other.signName || "Inconnu";
+  document.getElementById("compatibility-percentage").textContent = `${score}%`;
+  document.getElementById("compatibility-reading").textContent = reading;
+  
+  // Update bar
+  const barFill = document.getElementById("compatibility-bar-fill");
+  barFill.style.width = `${score}%`;
+  
+  // Add level class to bar
+  barFill.className = "compatibility-bar-fill";
+  if (score >= 85) {
+    barFill.classList.add("high");
+  } else if (score >= 70) {
+    barFill.classList.add("medium");
+  } else {
+    barFill.classList.add("low");
+  }
+  
+  // Add recommendations based on score
+  const recommendationsContent = document.getElementById("compatibility-recommendations-content");
+  const tipsContent = document.getElementById("compatibility-tips-content");
+  const warningsContent = document.getElementById("compatibility-warnings-content");
+  
+  if (score >= 85) {
+    recommendationsContent.innerHTML = `
+      <ul>
+        <li>Plongez dans des expériences sexuelles primitives et sauvages</li>
+        <li>Explorez vos fantasmes les plus tabous sans limites</li>
+        <li>Laissez vos corps s'unir dans une danse animale et instinctive</li>
+        <li>Découvrez le plaisir dans sa forme la plus brute et authentique</li>
+      </ul>
+    `;
+    tipsContent.innerHTML = `
+      <ul>
+        <li>Exprimez vos désirs les plus sombres et les plus ardents</li>
+        <li>Initiez des jeux de rôle audacieux et des scénarios érotiques</li>
+        <li>Expérimentez les sensations extrêmes et les plaisirs intenses</li>
+        <li>Abandonnez-vous complètement à vos instincts sexuels primaires</li>
+        <li>Créez des rituels sensuels qui repoussent toutes les frontières</li>
+      </ul>
+    `;
+    warningsContent.innerHTML = `
+      <ul>
+        <li>Ne retenez jamais vos pulsions les plus sauvages</li>
+        <li>N'ayez peur d'aucune forme d'exploration érotique</li>
+        <li>Laissez la passion vous consumer sans aucune retenue</li>
+      </ul>
+    `;
+  } else if (score >= 70) {
+    recommendationsContent.innerHTML = `
+      <ul>
+        <li>Explorez des territoires sexuels nouveaux et excitants</li>
+        <li>Découvrez vos points chauds mutuels par l'exploration tactile</li>
+        <li>Initiez des jeux de séduction qui attisent le désir</li>
+        <li>Créez une tension sexuelle qui monte progressivement</li>
+      </ul>
+    `;
+    tipsContent.innerHTML = `
+      <ul>
+        <li>Partagez vos fantasmes les plus secrets et audacieux</li>
+        <li>Expérimentez les caresses sensuelles et les baisers passionnés</li>
+        <li>Découvrez le plaisir dans chaque partie de vos corps</li>
+        <li>Créez des scénarios érotiques qui stimulent l'imagination</li>
+        <li>Laissez le désir grandir naturellement avant de l'assouvir</li>
+      </ul>
+    `;
+    warningsContent.innerHTML = `
+      <ul>
+        <li>Ne cédez pas à l'impatience, laissez la passion mûrir</li>
+        <li>N'ayez pas peur d'exprimer vos désirs les plus bruts</li>
+        <li>Ne vous comparez à personne, votre connexion est unique</li>
+      </ul>
+    `;
+  } else {
+    recommendationsContent.innerHTML = `
+      <ul>
+        <li>Découvrez les bases du plaisir charnel et sensuel</li>
+        <li>Explorez la sexualité comme un territoire inconnu</li>
+        <li>Apprenez à connaître les réponses de vos corps</li>
+        <li>Créez des moments de découverte érotique mutuelle</li>
+      </ul>
+    `;
+    tipsContent.innerHTML = `
+      <ul>
+        <li>Commencez par des explorations tactiles douces et sensuelles</li>
+        <li>Découvrez ce qui fait vibrer vos corps de plaisir</li>
+        <li>Exprimez vos désirs naissants sans honte ni peur</li>
+        <li>Créez un espace où chaque sensation est célébrée</li>
+        <li>Laissez la curiosité guider vos explorations érotiques</li>
+      </ul>
+    `;
+    warningsContent.innerHTML = `
+      <ul>
+        <li>Ne forcez jamais l'intensité, laissez-la émerger naturellement</li>
+        <li>N'attendez pas la perfection, savourez chaque découverte</li>
+        <li>Soyez patient avec votre apprentissage mutuel du plaisir</li>
+        <li>N'ayez peur d'aucune forme d'exploration sensuelle</li>
+      </ul>
+    `;
+  }
+  
+  elements.sexCompatibilityPopup.hidden = false;
+  elements.sexCompatibilityPopupBackdrop.hidden = false;
+}
+
+function hideSexCompatibilityPopup() {
+  if (!elements.sexCompatibilityPopup || !elements.sexCompatibilityPopupBackdrop) return;
+  elements.sexCompatibilityPopup.hidden = true;
+  elements.sexCompatibilityPopupBackdrop.hidden = true;
+}
+
+function showLoveCompatibilityPopup() {
+  if (!elements.loveCompatibilityPopup || !elements.loveCompatibilityPopupBackdrop || !state.room) return;
+  
+  const players = state.room.players || [];
+  const others = players.filter(player => player.id !== state.player?.id);
+  
+  if (others.length === 0) {
+    return;
+  }
+  
+  const other = others[0];
+  const { score, reading, lengthLabel } = compatibilityScore(state.player.sign.id, other.signId);
+  
+  // Update popup content
+  document.getElementById("love-your-sign").textContent = state.player.sign.name;
+  document.getElementById("love-partner-sign").textContent = other.signName || "Inconnu";
+  document.getElementById("love-compatibility-percentage").textContent = `${score}%`;
+  document.getElementById("love-compatibility-reading").textContent = reading;
+  
+  // Update bar
+  const barFill = document.getElementById("love-compatibility-bar-fill");
+  barFill.style.width = `${score}%`;
+  
+  // Add level class to bar
+  barFill.className = "compatibility-bar-fill";
+  if (score >= 85) {
+    barFill.classList.add("high");
+  } else if (score >= 70) {
+    barFill.classList.add("medium");
+  } else {
+    barFill.classList.add("low");
+  }
+  
+  // Add love recommendations based on score
+  const recommendationsContent = document.getElementById("love-compatibility-recommendations-content");
+  const tipsContent = document.getElementById("love-compatibility-tips-content");
+  const warningsContent = document.getElementById("love-compatibility-warnings-content");
+  
+  if (score >= 85) {
+    recommendationsContent.innerHTML = `
+      <ul>
+        <li>Profondez votre connexion émotionnelle et spirituelle</li>
+        <li>Partagez vos rêves et aspirations les plus profonds</li>
+        <li>Créez des rituels et des moments spéciaux ensemble</li>
+        <li>Soutenez mutuellement vos passions et projets</li>
+      </ul>
+    `;
+    tipsContent.innerHTML = `
+      <ul>
+        <li>Communiquez ouvertement de vos sentiments profonds</li>
+        <li>Planifiez des activités romantiques et significatives</li>
+        <li>Célébrez vos succès et réconfortez dans les échecs</li>
+        <li>Créez un espace sûr pour l'expression émotionnelle</li>
+        <li>Investissez dans la croissance personnelle mutuelle</li>
+      </ul>
+    `;
+    warningsContent.innerHTML = `
+      <ul>
+        <li>Ne prenez pas cette connexion pour acquise</li>
+        <li>Évitez de négliger votre propre croissance personnelle</li>
+        <li>Ne laissez pas la routine tuer la magie</li>
+      </ul>
+    `;
+  } else if (score >= 70) {
+    recommendationsContent.innerHTML = `
+      <ul>
+        <li>Construisez une fondation solide de confiance et de respect</li>
+        <li>Découvrez vos valeurs communes et vos différences</li>
+        <li>Créez des expériences partagées pour renforcer votre lien</li>
+        <li>Soyez patient dans le développement de votre relation</li>
+      </ul>
+    `;
+    tipsContent.innerHTML = `
+      <ul>
+        <li>Écoutez activement les besoins de l'autre</li>
+        <li>Exprimez votre appréciation et votre gratitude</li>
+        <li>Créez des traditions et des souvenirs communs</li>
+        <li>Soyez honnête sur vos attentes et vos limites</li>
+        <li>Apprenez à naviguer les désaccords avec respect</li>
+      </ul>
+    `;
+    warningsContent.innerHTML = `
+      <ul>
+        <li>Ne précipitez pas les étapes importantes</li>
+        <li>Évitez les comparaisons avec d'autres relations</li>
+        <li>Ne sacrifiez pas votre identité pour la relation</li>
+      </ul>
+    `;
+  } else {
+    recommendationsContent.innerHTML = `
+      <ul>
+        <li>Focus sur la communication et la compréhension mutuelle</li>
+        <li>Prenez le temps de vraiment vous connaître</li>
+        <li>Explorez les bases d'une amitié solide d'abord</li>
+        <li>Soyez authentique et transparent dans vos intentions</li>
+      </ul>
+    `;
+    tipsContent.innerHTML = `
+      <ul>
+        <li>Soyez patient et compréhensif</li>
+        <li>Posez des questions pour mieux comprendre l'autre</li>
+        <li>Partagez vos propres vulnérabilités</li>
+        <li>Créez un environnement de sécurité émotionnelle</li>
+        <li>Célébrez les petites victoires et les moments de connexion</li>
+      </ul>
+    `;
+    warningsContent.innerHTML = `
+      <ul>
+        <li>Ne vous mettez pas la pression pour que ça "fonctionne"</li>
+        <li>Évitez les attentes irréalistes ou les projections</li>
+        <li>Soyez prêt à reconnaître si la connexion n'est pas là</li>
+        <li>Ne forcez pas une chimie qui n'existe pas naturellement</li>
+      </ul>
+    `;
+  }
+  
+  elements.loveCompatibilityPopup.hidden = false;
+  elements.loveCompatibilityPopupBackdrop.hidden = false;
+}
+
+function hideLoveCompatibilityPopup() {
+  if (!elements.loveCompatibilityPopup || !elements.loveCompatibilityPopupBackdrop) return;
+  elements.loveCompatibilityPopup.hidden = true;
+  elements.loveCompatibilityPopupBackdrop.hidden = true;
+}
+
+function updateUserCount() {
+  if (!elements.userCount || !state.room) return;
+  const players = state.room.players || [];
+  elements.userCount.textContent = players.length;
+}
 
 async function joinRoom(roomId, mode = "joined") {
   console.log("🚪 joinRoom appelé avec roomId:", roomId, "mode:", mode);
   
-  // FORCER l'utilisation du roomId entré, ignorer la session sauvegardée
-  const room = await api(`/api/rooms/${roomId}/join`, {
-    method: "POST",
-    body: { player: playerPayload() }
-  });
-  
-  console.log("✅ Room reçue de l'API:", room);
-  enterRoom(room, mode);
+  try {
+    // FORCER l'utilisation du roomId entré, ignorer la session sauvegardée
+    console.log("📡 Sending API request to:", `/api/rooms/${roomId}/join`);
+    console.log("👤 Player payload:", playerPayload());
+    
+    const room = await api(`/api/rooms/${roomId}/join`, {
+      method: "POST",
+      body: { player: playerPayload() }
+    });
+    
+    console.log("✅ Room reçue de l'API:", room);
+    enterRoom(room, mode);
+  } catch (error) {
+    console.error("❌ Error joining room:", error);
+    elements.joinRoomId.setCustomValidity("Impossible de rejoindre la salle. Vérifiez l'ID.");
+    elements.joinRoomId.reportValidity();
+  }
 }
 
 function enterRoom(room, mode) {
@@ -570,46 +1071,129 @@ async function spinBottle() {
   }
 }
 
+let isSendingMessage = false; // Prevent double sends
+
 async function sendChatMessage(event) {
   event.preventDefault();
+  
+  // Prevent multiple simultaneous sends
+  if (isSendingMessage) {
+    return;
+  }
+  
   if (!state.roomId || !state.player) {
     return;
   }
-  const file = elements.chatFile.files?.[0] || null;
-  const text = elements.chatInput.value.trim();
-  const activeRecordedClip = recordedClip;
-  let payload = {
-    playerId: state.player.id,
-    type: "text",
-    text,
-    fileName: activeRecordedClip ? activeRecordedClip.fileName : file ? file.name : undefined
-  };
-
-  if (activeRecordedClip || file) {
-    const media = activeRecordedClip ? activeRecordedClip.dataUrl : await readFileAsDataUrl(file);
-    const mediaMime = activeRecordedClip ? activeRecordedClip.mimeType : file.type;
-    const mediaName = activeRecordedClip ? activeRecordedClip.fileName : file.name;
-    payload = {
+  
+  isSendingMessage = true;
+  
+  try {
+    // Get all media immediately
+    const file = elements.chatFile.files?.[0] || null;
+    const text = elements.chatInput.value.trim();
+    
+    // Check if we have media to send
+    const hasMedia = file;
+    const hasText = text.length > 0;
+    
+    // Allow sending media without text
+    if (!hasMedia && !hasText) {
+      isSendingMessage = false;
+      return;
+    }
+    
+    // Store original text for potential restore
+    const originalText = text;
+    
+    // Clear input immediately for better UX
+    elements.chatInput.value = "";
+    
+    let payload = {
       playerId: state.player.id,
-      type: mediaType(mediaMime, mediaName),
-      text,
-      media,
-      fileName: mediaName
+      type: "text",
+      text: text,
+      fileName: hasMedia ? file.name : undefined
     };
-  }
 
-  if (!payload.text && !payload.media) {
-    return;
-  }
+    if (hasMedia) {
+      try {
+        // Process media with optimization for large files
+        let media, mediaMime, mediaName;
+        
+        if (file) {
+          // Show processing status for large files
+          if (file.size > 5 * 1024 * 1024) {
+            elements.roomStatus.textContent = "Traitement du fichier en cours...";
+          }
+          
+          media = await processFileForUpload(file);
+          if (!media) {
+            // File was too large or processing failed
+            elements.chatInput.value = originalText;
+            isSendingMessage = false;
+            return;
+          }
+          
+          mediaMime = file.type;
+          mediaName = file.name;
+        }
+        
+        payload = {
+          playerId: state.player.id,
+          type: mediaType(mediaMime, mediaName),
+          text: text,
+          media: media,
+          fileName: mediaName
+        };
+      } catch (error) {
+        console.error("Error processing media:", error);
+        elements.roomStatus.textContent = "Erreur lors du traitement du média.";
+        // Restore input if media processing failed
+        elements.chatInput.value = originalText;
+        isSendingMessage = false;
+        return;
+      }
+    }
 
-  const room = await api(`/api/rooms/${state.roomId}/messages`, {
-    method: "POST",
-    body: payload
-  });
-  state.room = room;
-  clearPendingMedia();
-  elements.chatInput.value = "";
-  renderLiveRoom(room);
+    // Send immediately with timeout for mobile
+    const room = await Promise.race([
+      api(`/api/rooms/${state.roomId}/messages`, {
+        method: "POST",
+        body: payload
+      }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 10000))
+    ]);
+    
+    state.room = room;
+    clearPendingMedia();
+    
+    // Render immediately and scroll to bottom
+    renderLiveRoom(room);
+    
+    // Force scroll to bottom immediately after rendering
+    setTimeout(() => {
+      const chatMessages = document.querySelector('.chat-messages');
+      if (chatMessages) {
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    }, 50);
+    
+    // Show success feedback
+    if (hasMedia) {
+      elements.roomStatus.textContent = "Média envoyé avec succès.";
+      setTimeout(() => {
+        elements.roomStatus.textContent = "";
+      }, 1500);
+    }
+  } catch (error) {
+    console.error("Failed to send message:", error);
+    elements.roomStatus.textContent = "Échec de l'envoi. Réessayez.";
+    // Restore input if failed
+    elements.chatInput.value = originalText;
+  } finally {
+    // Always reset the sending flag
+    isSendingMessage = false;
+  }
 }
 
 async function detectScreenshotKey(event) {
@@ -648,9 +1232,16 @@ async function chooseRoundPrompt(mode, prompt = "") {
   if (mode === "custom") {
     customPromptDraft = String(prompt || "");
   }
+  // Use local explicit questions instead of API call
+  const promptResult = generatePrompt(mode === 'hot' ? 'hot' : 'normal');
   const room = await api(`/api/rooms/${state.roomId}/prompt`, {
     method: "POST",
-    body: { playerId: state.player.id, mode, prompt }
+    body: { 
+      playerId: state.player.id, 
+      mode, 
+      prompt: promptResult.prompt,
+      type: promptResult.type
+    }
   });
   customPromptDraft = "";
   customPromptRoundId = "";
@@ -802,30 +1393,124 @@ function renderRoomOptionsPlayer() {
 
 function renderRoom(mode) {
   const { player } = state;
-  elements.roomTitle.textContent = mode === "joined" ? "Vous avez rejoint la table." : "La table est prete.";
+  elements.roomTitle.textContent = mode === "joined" ? "" : "La table est prete.";
   elements.roomCode.textContent = state.roomId;
-  elements.roomPlayerLabel.textContent = `${player.name}, ${player.age} ans`;
+  elements.roomPlayerLabel.textContent = "";
   renderLiveRoom(state.room);
 }
 
+let lastRoomSignature = ""; // Cache to prevent excessive room re-rendering
+
 function renderLiveRoom(room, options = {}) {
   if (!room) {
+    // Update user count
+    updateUserCount();
     return;
   }
 
-  if (pendingLocalRoom && !options.forceReveal) {
-    renderChat(room.messages || []);
+  // Create signature to detect if room actually changed
+  const roomSignature = JSON.stringify({
+    playerCount: room.players?.length || 0,
+    messageCount: room.messages?.length || 0,
+    round: room.round,
+    lastMessageId: room.messages?.[room.messages.length - 1]?.id,
+    lastMessageText: room.messages?.[room.messages.length - 1]?.text,
+    lastMessageMedia: room.messages?.[room.messages.length - 1]?.media ? "hasMedia" : "noMedia"
+  });
+
+  // Don't re-render if room didn't change significantly
+  if (roomSignature === lastRoomSignature && !options.force) {
     return;
   }
+
+  lastRoomSignature = roomSignature;
 
   const players = room.players || [];
-  elements.roomCode.textContent = room.id;
+  const hasPlayers = players.length > 0;
+  const round = room.round;
   updateSpinAvailability(room);
   renderSeats(players, room.round);
   renderRound(room, players, options);
-  renderPlayersPanel(players, room.currentTurnId, room.round);
   renderCompatibility(players);
+  renderSexCompatibility(players);
   renderChat(room.messages || []);
+  
+  // Add click handlers for media in chat
+  addMediaClickHandlers();
+  
+  // Scroll chat to bottom after rendering
+  scrollToChatBottom();
+}
+
+function scrollToChatBottom() {
+  const chatMessages = document.querySelector('.chat-messages');
+  if (chatMessages) {
+    // Use setTimeout to ensure DOM is fully rendered
+    setTimeout(() => {
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }, 100);
+  }
+}
+
+function renderSexCompatibility(players) {
+  const sexFill = document.querySelector(".sex-compatibility-fill");
+  const sexPercentage = document.querySelector(".sex-compatibility-percentage");
+  const loveFill = elements.loveCompatibilityFill;
+  const lovePercentage = elements.loveCompatibilityPercentage;
+  
+  if (!sexFill || !sexPercentage || !loveFill || !lovePercentage || !state.player) return;
+  
+  const others = players.filter(player => player.id !== state.player?.id);
+  if (others.length === 0) {
+    sexFill.style.width = "0%";
+    sexPercentage.textContent = "0%";
+    sexFill.className = "sex-compatibility-fill";
+    
+    loveFill.style.width = "0%";
+    lovePercentage.textContent = "0%";
+    loveFill.className = "love-compatibility-fill";
+    return;
+  }
+  
+  const other = others[0];
+  
+  // Update sex compatibility
+  const { score: sexScore } = sexCompatibilityScore(state.player.sign.id, other.signId);
+  sexFill.className = "sex-compatibility-fill";
+  
+  // Apply inline color styles
+  if (sexScore >= 85) {
+    sexFill.style.background = "linear-gradient(90deg, #ff1493, #ff69b4, #ffb6c1, #ff69b4, #ff1493)";
+    sexFill.classList.add("high");
+  } else if (sexScore >= 70) {
+    sexFill.style.background = "linear-gradient(90deg, #9932cc, #ff1493, #ba55d3, #ff1493, #9932cc)";
+    sexFill.classList.add("medium");
+  } else {
+    sexFill.style.background = "linear-gradient(90deg, #8b008b, #9932cc, #8b008b)";
+    sexFill.classList.add("low");
+  }
+  
+  sexFill.style.width = `${sexScore}%`;
+  sexPercentage.textContent = `${sexScore}%`;
+  
+  // Update love compatibility
+  const { score: loveScore } = compatibilityScore(state.player.sign.id, other.signId);
+  loveFill.className = "love-compatibility-fill";
+  
+  // Apply inline color styles
+  if (loveScore >= 85) {
+    loveFill.style.background = "linear-gradient(90deg, #ff1493, #ff69b4, #ffb6c1, #ff69b4, #ff1493)";
+    loveFill.classList.add("high");
+  } else if (loveScore >= 70) {
+    loveFill.style.background = "linear-gradient(90deg, #ff69b4, #ff1493, #db7093, #ff1493, #ff69b4)";
+    loveFill.classList.add("medium");
+  } else {
+    loveFill.style.background = "linear-gradient(90deg, #4169e1, #6495ed, #4169e1)";
+    loveFill.classList.add("low");
+  }
+  
+  loveFill.style.width = `${loveScore}%`;
+  lovePercentage.textContent = `${loveScore}%`;
 }
 
 function updateSpinAvailability(room) {
@@ -1045,7 +1730,7 @@ function renderRound(room, players, options = {}) {
     elements.approvalPanel.append(approve, reject);
   } else if (pending && isTarget) {
     const note = document.createElement("p");
-    note.textContent = "C'est votre tour. Faites l'action ou dites la verite, puis laissez la table approuver.";
+    note.textContent = "À votre tour ! Faites l'action ou dites la vérité, puis laissez la table approuver.";
     elements.approvalPanel.append(note);
   } else if (pending && hasVoted) {
     const note = document.createElement("p");
@@ -1065,74 +1750,170 @@ function stopLocalSpin() {
   elements.spinButton.classList.remove("is-rolling");
 }
 
+function renderMediaContent(message) {
+  if (!message.media) return '';
+  
+  const mediaType = message.type || 'image';
+  const mediaSrc = message.media;
+  const fileName = message.fileName || 'media';
+  
+  if (mediaType === 'image') {
+    return `<img src="${mediaSrc}" alt="${fileName}" loading="lazy" />`;
+  } else if (mediaType === 'video') {
+    return `<video controls preload="metadata">
+      <source src="${mediaSrc}" type="video/mp4">
+      <source src="${mediaSrc}" type="video/webm">
+      <source src="${mediaSrc}" type="video/ogg">
+      Votre navigateur ne supporte pas les vidéos.
+    </video>`;
+  } else if (mediaType === 'audio') {
+    return `<audio controls preload="metadata">
+      <source src="${mediaSrc}" type="audio/mpeg">
+      <source src="${mediaSrc}" type="audio/wav">
+      <source src="${mediaSrc}" type="audio/ogg">
+      Votre navigateur ne supporte pas l'audio.
+    </audio>`;
+  }
+  
+  return '';
+}
+
+let lastChatSignature = ""; // Cache to prevent excessive re-rendering
+
 function renderChat(messages) {
+  if (!elements.chatMessages) return;
+  
+  // Create signature to detect if messages actually changed
   const signature = messages
-    .map((message) => `${message.id || ""}:${message.createdAt || message.timestamp || ""}`)
+    .map((message) => `${message.id || ""}:${message.createdAt || message.timestamp || ""}:${message.text || ""}:${message.media ? "media" : ""}`)
     .join("|");
-  if (signature === lastRenderedChatSignature) {
+  
+  // Don't re-render if nothing changed
+  if (signature === lastChatSignature) {
     return;
   }
-  lastRenderedChatSignature = signature;
-
-  const wasNearBottom = elements.chatMessages.scrollTop + elements.chatMessages.clientHeight >= elements.chatMessages.scrollHeight - 40;
-  elements.chatMessages.replaceChildren(
-    ...messages.map((message) => {
-      const item = document.createElement("article");
-      item.className = `chat-message${message.playerId === state.player?.id ? " is-mine" : ""}`;
-      const media = renderMessageMedia(message);
-      item.innerHTML = `
-        <strong>${escapeHtml(message.playerName || "Joueur")}</strong>
-        ${message.text ? `<p>${escapeHtml(message.text)}</p>` : ""}
-        ${media}
+  
+  lastChatSignature = signature;
+  
+  // Use innerHTML for faster rendering on mobile
+  let chatHTML = "";
+  
+  if (messages.length === 0) {
+    chatHTML = `<p class="chat-empty">Aucun message pour le moment.</p>`;
+  } else {
+    messages.forEach((message) => {
+      const isMine = message.playerId === state.player?.id;
+      chatHTML += `
+        <article class="chat-message ${isMine ? "is-mine" : ""}">
+          <strong>${message.playerName || "Anonyme"}</strong>
+          <p>${message.text || ""}</p>
+          ${message.media ? renderMediaContent(message) : ""}
+        </article>
       `;
-      return item;
-    })
-  );
-  if (wasNearBottom) {
-    elements.chatMessages.scrollTop = elements.chatMessages.scrollHeight;
+    });
   }
+  
+  elements.chatMessages.innerHTML = chatHTML;
+  
+  // Re-add media click handlers after rendering
+  setTimeout(() => {
+    addMediaClickHandlers();
+  }, 50);
 }
 
 function onMediaFileSelected() {
-  recordedClip = null;
   renderMediaPreview();
 }
 
 function renderMediaPreview() {
+  console.log("renderMediaPreview called");
+  console.log("chatFile files:", elements.chatFile.files);
+  
   const file = elements.chatFile.files?.[0] || null;
-  const clip = recordedClip;
-  const sourceFileName = clip ? clip.fileName : file?.name;
-  const sourceType = clip ? mediaType(clip.mimeType, clip.fileName) : file ? mediaType(file.type, file.name) : "";
-  elements.mediaPreview.replaceChildren();
-  if (!file && !clip) {
+  
+  if (!file) {
+    console.log("No file to preview");
+    elements.mediaPreview.replaceChildren();
     return;
   }
+  
+  const sourceFileName = file.name;
+  const sourceType = mediaType(file.type, file.name);
+  
+  console.log("sourceFileName:", sourceFileName);
+  console.log("sourceType:", sourceType);
+  
+  // Clear existing preview
+  elements.mediaPreview.replaceChildren();
 
-  const previewUrl = clip ? clip.dataUrl : URL.createObjectURL(file);
+  console.log("Creating preview element...");
   const preview = document.createElement("div");
   preview.className = "preview-card";
-  const kind = sourceType;
-  const media = document.createElement(kind === "image" ? "img" : kind === "video" ? "video" : "audio");
-  media.src = previewUrl;
-  if (kind !== "image") {
-    media.controls = true;
+  preview.style.cssText = `
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 80px;
+  `;
+
+  if (sourceType === "image") {
+    console.log("Creating image preview");
+    const img = document.createElement("img");
+    img.src = URL.createObjectURL(file);
+    img.style.cssText = "width: 60px; height: 60px; object-fit: cover; border-radius: 6px;";
+    preview.appendChild(img);
+  } else if (sourceType === "video") {
+    console.log("Creating video preview");
+    const video = document.createElement("video");
+    video.src = URL.createObjectURL(file);
+    video.style.cssText = "width: 60px; height: 60px; object-fit: cover; border-radius: 6px;";
+    video.muted = true;
+    preview.appendChild(video);
+  } else if (sourceType === "audio") {
+    console.log("Creating audio preview");
+    const audioIcon = document.createElement("div");
+    audioIcon.textContent = "🎵";
+    audioIcon.style.cssText = "font-size: 32px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border-radius: 6px; flex-shrink: 0;";
+    preview.appendChild(audioIcon);
+
+    // Add audio player for audio files
+    const audioPlayer = document.createElement("audio");
+    audioPlayer.src = URL.createObjectURL(file);
+    audioPlayer.controls = true;
+    audioPlayer.preload = "metadata";
+    audioPlayer.style.cssText = "flex: 1; height: 40px; min-width: 0;";
+    preview.appendChild(audioPlayer);
   }
-  if (kind === "audio") {
-    media.preload = "metadata";
-  }
+
+  const info = document.createElement("div");
+  info.style.cssText = "flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px;";
+  info.innerHTML = `
+    <div style="font-size: 0.9rem; font-weight: 500; color: white; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${sourceFileName}</div>
+    <div style="font-size: 0.8rem; color: var(--muted);">${sourceType}</div>
+  `;
+  preview.appendChild(info);
 
   const remove = document.createElement("button");
-  remove.type = "button";
-  remove.className = "secondary-button";
-  remove.textContent = "Retirer";
-  remove.addEventListener("click", () => {
-    clearPendingMedia();
-  });
+  remove.textContent = "✕";
+  remove.className = "ghost-button";
+  remove.style.cssText = "width: 32px; height: 32px; padding: 0; font-size: 1rem; background: rgba(255, 255, 255, 0.1); border: none; border-radius: 4px; color: white; cursor: pointer; flex-shrink: 0;";
+  remove.onclick = clearPendingMedia;
+  preview.appendChild(remove);
 
-  const label = document.createElement("span");
-  label.textContent = sourceFileName || "media";
-  preview.append(media, label, remove);
-  elements.mediaPreview.append(preview);
+  console.log("Appending preview to mediaPreview container");
+  elements.mediaPreview.appendChild(preview);
+  
+  // Force display check
+  setTimeout(() => {
+    console.log("Preview container children:", elements.mediaPreview.children.length);
+    console.log("Preview container style:", elements.mediaPreview.style.cssText);
+    console.log("Preview container display:", window.getComputedStyle(elements.mediaPreview).display);
+  }, 100);
 }
 
 function renderMessageMedia(message) {
@@ -1153,55 +1934,261 @@ function renderMessageMedia(message) {
   return "";
 }
 
+// Test function to verify audio button accessibility on mobile
+function testAudioButton() {
+  const audioButton = document.querySelector("#chat-record-button");
+  console.log("Audio button test - found:", !!audioButton);
+  console.log("Audio button element:", audioButton);
+  console.log("Audio button parent:", audioButton?.parentElement);
+  
+  if (audioButton) {
+    // Test if button is visible and clickable
+    const styles = window.getComputedStyle(audioButton);
+    console.log("Button display:", styles.display);
+    console.log("Button visibility:", styles.visibility);
+    console.log("Button pointer-events:", styles.pointerEvents);
+    console.log("Button z-index:", styles.zIndex);
+    
+    // Add visual test indicator
+    audioButton.style.border = "2px solid red";
+    setTimeout(() => {
+      audioButton.style.border = "";
+    }, 2000);
+  }
+}
+
 async function toggleAudioRecording() {
+  console.log("toggleAudioRecording called, isRecording:", isRecording);
+  
   if (isRecording) {
+    console.log("Stopping recording...");
     mediaRecorder?.stop();
     return;
   }
-  if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+  
+  // Check browser support
+  if (!navigator.mediaDevices?.getUserMedia) {
+    console.error("getUserMedia not supported");
     elements.roomStatus.textContent = "L'enregistrement audio n'est pas supporte sur cet appareil.";
     return;
   }
+  
+  if (typeof MediaRecorder === "undefined") {
+    console.error("MediaRecorder not supported");
+    elements.roomStatus.textContent = "L'enregistrement audio n'est pas supporte sur cet appareil.";
+    return;
+  }
+  
+  console.log("Starting audio recording...");
+  elements.roomStatus.textContent = "Demande d'accès au micro...";
+  
   try {
-    recorderStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    // Mobile-optimized audio constraints
+    const constraints = {
+      audio: {
+        echoCancellation: false, // Disable for mobile compatibility
+        noiseSuppression: false, // Disable for mobile compatibility
+        autoGainControl: false,  // Disable for mobile compatibility
+        sampleRate: 16000,        // Lower sample rate for mobile
+        channelCount: 1          // Mono for mobile
+      }
+    };
+    
+    console.log("Trying to get user media...");
+    
+    // Try with basic constraints first (most compatible)
+    try {
+      console.log("Attempting basic audio constraints...");
+      recorderStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      console.log("Basic constraints successful");
+    } catch (basicError) {
+      console.log("Basic constraints failed, trying specific constraints:", basicError);
+      // Try with specific constraints
+      try {
+        recorderStream = await navigator.mediaDevices.getUserMedia(constraints);
+        console.log("Specific constraints successful");
+      } catch (specificError) {
+        console.error("Specific constraints also failed:", specificError);
+        throw specificError;
+      }
+    }
+    
     recorderChunks = [];
-    const mimeType = pickRecorderMimeType();
-    mediaRecorder = mimeType ? new MediaRecorder(recorderStream, { mimeType }) : new MediaRecorder(recorderStream);
+    
+    // Find best supported mimeType for mobile
+    let mimeType = "audio/webm";
+    const supportedTypes = [
+      "audio/webm;codecs=opus",
+      "audio/webm", 
+      "audio/mp4",
+      "audio/ogg;codecs=opus",
+      "audio/ogg"
+    ];
+    
+    for (const type of supportedTypes) {
+      if (MediaRecorder.isTypeSupported(type)) {
+        mimeType = type;
+        break;
+      }
+    }
+    
+    mediaRecorder = new MediaRecorder(recorderStream, { mimeType });
+    
     mediaRecorder.addEventListener("dataavailable", (event) => {
       if (event.data && event.data.size > 0) {
         recorderChunks.push(event.data);
       }
     });
+    
     mediaRecorder.addEventListener("stop", async () => {
-      const recordedMime = mediaRecorder.mimeType || mimeType || "audio/webm";
-      const extension = extensionFromMime(recordedMime);
-      const blob = new Blob(recorderChunks, { type: recordedMime });
-      recordedClip = {
-        dataUrl: await readBlobAsDataUrl(blob),
-        fileName: `record-${Date.now()}.${extension}`,
-        mimeType: recordedMime
-      };
-      elements.chatFile.value = "";
-      renderMediaPreview();
-      cleanupRecorder();
-      updateRecordButtonUI(false);
-      elements.roomStatus.textContent = "Audio enregistre. Appuyez sur envoyer.";
+      try {
+        const recordedMime = mediaRecorder.mimeType || mimeType;
+        const extension = extensionFromMime(recordedMime);
+        const blob = new Blob(recorderChunks, { type: recordedMime });
+        
+        recordedClip = {
+          dataUrl: await readBlobAsDataUrl(blob),
+          fileName: `record-${Date.now()}.${extension}`,
+          mimeType: recordedMime
+        };
+        
+        elements.chatFile.value = "";
+        renderMediaPreview();
+        cleanupRecorder();
+        updateRecordButtonUI(false);
+        elements.roomStatus.textContent = "Audio enregistre. Appuyez sur envoyer.";
+      } catch (error) {
+        console.error("Error processing audio:", error);
+        elements.roomStatus.textContent = "Erreur lors du traitement audio.";
+        cleanupRecorder();
+        updateRecordButtonUI(false);
+      }
     });
-    mediaRecorder.start();
+    
+    // Start recording with mobile-optimized settings
+    mediaRecorder.start(1000); // 1 second intervals for mobile
     isRecording = true;
     updateRecordButtonUI(true);
     elements.roomStatus.textContent = "Enregistrement en cours...";
   } catch (error) {
+    console.error("Audio recording error:", error);
     cleanupRecorder();
     updateRecordButtonUI(false);
-    elements.roomStatus.textContent = "Micro refuse ou indisponible.";
+    
+    // More specific error messages for mobile
+    if (error.name === 'NotAllowedError') {
+      elements.roomStatus.textContent = "Permission micro refuse. Autorisez le micro.";
+    } else if (error.name === 'NotFoundError') {
+      elements.roomStatus.textContent = "Aucun micro trouve sur cet appareil.";
+    } else if (error.name === 'NotSupportedError') {
+      elements.roomStatus.textContent = "Enregistrement audio non supporte.";
+    } else {
+      elements.roomStatus.textContent = "Erreur micro: " + error.message;
+    }
   }
 }
 
 function clearPendingMedia() {
-  recordedClip = null;
   elements.chatFile.value = "";
   elements.mediaPreview.replaceChildren();
+}
+
+function addMediaClickHandlers() {
+  // Add click handlers to all images and videos in chat
+  const chatImages = document.querySelectorAll('.chat-message img');
+  const chatVideos = document.querySelectorAll('.chat-message video');
+  
+  chatImages.forEach(img => {
+    img.addEventListener('click', () => openMediaViewer(img.src, 'image'));
+  });
+  
+  chatVideos.forEach(video => {
+    video.addEventListener('click', () => openMediaViewer(video.src, 'video'));
+  });
+}
+
+function openMediaViewer(src, type) {
+  // Create media viewer overlay
+  const viewer = document.createElement('div');
+  viewer.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  `;
+  
+  let mediaElement;
+  if (type === 'image') {
+    mediaElement = document.createElement('img');
+    mediaElement.src = src;
+    mediaElement.style.cssText = `
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      border-radius: 8px;
+    `;
+  } else if (type === 'video') {
+    mediaElement = document.createElement('video');
+    mediaElement.src = src;
+    mediaElement.controls = true;
+    mediaElement.autoplay = true;
+    mediaElement.style.cssText = `
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+    `;
+  }
+  
+  // Add close button
+  const closeButton = document.createElement('button');
+  closeButton.textContent = '✕';
+  closeButton.style.cssText = `
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `;
+  
+  viewer.appendChild(mediaElement);
+  viewer.appendChild(closeButton);
+  document.body.appendChild(viewer);
+  
+  // Close on click or close button
+  const closeViewer = () => {
+    document.body.removeChild(viewer);
+  };
+  
+  viewer.addEventListener('click', closeViewer);
+  closeButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeViewer();
+  });
+  
+  // Close on escape key
+  const handleEscape = (e) => {
+    if (e.key === 'Escape') {
+      closeViewer();
+      document.removeEventListener('keydown', handleEscape);
+    }
+  };
+  document.addEventListener('keydown', handleEscape);
 }
 
 function cleanupRecorder() {
@@ -1218,9 +2205,16 @@ function updateRecordButtonUI(recording) {
   if (!elements.chatRecordButton) {
     return;
   }
+  
+  // Update button appearance
   elements.chatRecordButton.textContent = recording ? "⏹️" : "🎙️";
   elements.chatRecordButton.classList.toggle("is-recording", recording);
   elements.chatRecordButton.title = recording ? "Stop enregistrement" : "Enregistrer un audio";
+  
+  // Update status message for better user feedback
+  if (recording) {
+    elements.roomStatus.textContent = "🎙️ Enregistrement en cours... Cliquez sur ⏹️ pour arrêter.";
+  }
 }
 
 function pickRecorderMimeType() {
@@ -1248,46 +2242,56 @@ function readBlobAsDataUrl(blob) {
   });
 }
 
-function renderPlayersPanel(players, currentTurnId, round) {
-  elements.playersList.replaceChildren(
-    ...players.map((player) => {
-      const card = document.createElement("article");
-      card.className = `mini-player${player.id === state.player?.id ? " is-you" : ""}`;
-      card.style.setProperty("--sign-a", player.signColors?.[0] || "#ff477e");
-      card.style.setProperty("--sign-b", player.signColors?.[1] || "#7f4cff");
-      const turnText = player.id === state.player?.id ? "Vous" : "Partenaire";
-      card.innerHTML = `
-        <span class="mini-avatar">${escapeHtml(player.signGlyph || initials(player.name))}</span>
-        <div>
-          <strong>${escapeHtml(player.name)}</strong>
-          <p>${escapeHtml(String(player.age))} ans - ${escapeHtml(player.signName || "")}</p>
-          <small>${escapeHtml(turnText)} - ${player.penalties || 0} penalite${player.penalties > 1 ? "s" : ""}</small>
-        </div>
-      `;
-      return card;
-    })
-  );
-}
-
 function renderCompatibility(players) {
   const others = players.filter((player) => player.id !== state.player?.id);
   if (!others.length) {
-    elements.compatibilityList.innerHTML = `<p class="empty-note">La connexion astro apparaitra quand un autre joueur rejoint la salle.</p>`;
+    const empty = `<p class="empty-note">La connexion astro apparaitra quand un autre joueur rejoint la salle.</p>`;
+    elements.compatibilityList.innerHTML = empty;
+    if (elements.compatibilityListDrawer) {
+      elements.compatibilityListDrawer.innerHTML = empty;
+    }
     return;
   }
 
-  elements.compatibilityList.replaceChildren(
-    ...others.map((player) => {
+  const cards = others.map((player) => {
       const item = document.createElement("article");
       item.className = "compatibility-card";
-      const reading = compatibilityReading(state.player.sign.id, player.signId);
+      const { reading, score, lengthLabel } = compatibilityScore(state.player.sign.id, player.signId);
       item.innerHTML = `
         <strong>${escapeHtml(state.player.sign.name)} + ${escapeHtml(player.signName || "")}</strong>
         <p>${escapeHtml(reading)}</p>
+        <div class="match-meter" aria-hidden="true"><div class="match-meter-fill" style="width:${score}%"></div></div>
+        <div class="match-meta"><span>${score}%</span><span>${escapeHtml(lengthLabel)}</span></div>
       `;
       return item;
-    })
-  );
+    });
+
+  elements.compatibilityList.replaceChildren(...cards);
+  if (elements.compatibilityListDrawer) {
+    // clone nodes to avoid moving them out of desktop list
+    elements.compatibilityListDrawer.replaceChildren(...cards.map((node) => node.cloneNode(true)));
+  }
+}
+
+function compatibilityScore(mySignId, otherSignId) {
+  const reading = compatibilityReading(mySignId, otherSignId);
+  // Basic heuristic: same sign > same element > complementary element pairs > otherwise.
+  const fire = ["belier", "lion", "sagittaire"];
+  const earth = ["taureau", "vierge", "capricorne"];
+  const air = ["gemeaux", "balance", "verseau"];
+  const water = ["cancer", "scorpion", "poissons"];
+  const groups = [fire, earth, air, water];
+  const myGroup = groups.findIndex((group) => group.includes(mySignId));
+  const otherGroup = groups.findIndex((group) => group.includes(otherSignId));
+
+  let score = 58;
+  if (mySignId === otherSignId) score = 86;
+  else if (myGroup === otherGroup) score = 78;
+  else if ((myGroup === 0 && otherGroup === 2) || (myGroup === 2 && otherGroup === 0)) score = 74; // fire-air
+  else if ((myGroup === 1 && otherGroup === 3) || (myGroup === 3 && otherGroup === 1)) score = 74; // earth-water
+
+  const lengthLabel = score >= 80 ? "Long terme" : score >= 70 ? "Stable" : score >= 60 ? "A explorer" : "Court terme";
+  return { reading, score, lengthLabel };
 }
 
 function renderPlayerCard(target, player) {
@@ -1298,17 +2302,25 @@ function renderPlayerCard(target, player) {
                        sign.id === 'gemeaux' ? 'gemaux' : 
                        sign.id === 'poissons' ? 'poisson' : 
                        sign.id;
+  const isMobile = window.innerWidth <= 620;
+  const hiddenName = isMobile ? escapeHtml(player.name).substring(0, 2) + '***' : escapeHtml(player.name);
+  const hiddenAge = isMobile ? '**' : escapeHtml(String(player.age));
+  const hiddenSign = isMobile ? '***' : escapeHtml(sign.name);
+  const hiddenDescription = isMobile ? 
+    escapeHtml(sign.description).replace(/\b(\w{4,})\b/g, (match) => '*'.repeat(match.length)) :
+    escapeHtml(sign.description);
+  
   target.innerHTML = `
     <div class="player-image" aria-hidden="true">
       <img src="assets/images/zodiac/${imageName}.jpeg" alt="${escapeHtml(sign.name)}" loading="lazy">
     </div>
     <div>
       <p class="eyebrow">Profil joueur</p>
-      <h3>${escapeHtml(player.name)}</h3>
-      <p>${escapeHtml(String(player.age))} ans - ${escapeHtml(sign.name)}</p>
-      <p class="zodiac-dates">${escapeHtml(sign.dates)}</p>
+      <h3>${hiddenName}</h3>
+      <p>${hiddenAge} ans - ${hiddenSign}</p>
+      <p class="zodiac-dates">${isMobile ? '***' : escapeHtml(sign.dates)}</p>
     </div>
-    <p>${escapeHtml(sign.description)}</p>
+    <p class="${isMobile ? 'blurred-text' : ''}">${hiddenDescription}</p>
   `;
 }
 
@@ -1325,7 +2337,33 @@ function initAmbientAudio() {
 
   elements.ambientAudio.volume = 0.35;
   resetAmbientPlaylist();
-  advanceAmbientTrack();
+  
+  // Restore music state from localStorage
+  const musicState = localStorage.getItem(MUSIC_STATE_KEY);
+  if (musicState) {
+    try {
+      const state = JSON.parse(musicState);
+      ambientPlaylistIndex = state.trackIndex || 0;
+      advanceAmbientTrack();
+      
+      // Wait for metadata to load before setting time and resuming
+      elements.ambientAudio.addEventListener('loadedmetadata', () => {
+        elements.ambientAudio.currentTime = state.currentTime || 0;
+        
+        // Resume playback if music was playing before refresh
+        if (state.wasPlaying && soundEnabled) {
+          elements.ambientAudio.play().catch(error => {
+            console.log("Failed to resume music playback:", error);
+          });
+        }
+      }, { once: true });
+    } catch (error) {
+      console.log("Failed to restore music state:", error);
+      advanceAmbientTrack();
+    }
+  } else {
+    advanceAmbientTrack();
+  }
 
   const saved = localStorage.getItem(SOUND_PREF_KEY);
   soundEnabled = saved === "1";
@@ -1347,6 +2385,22 @@ function initAmbientAudio() {
     if (advanceAmbientTrack()) {
       await applyAmbientPlayback();
     }
+  });
+
+  // Save music state periodically and on time updates
+  let musicStateTimer = setInterval(() => {
+    saveMusicState();
+  }, 5000); // Save every 5 seconds
+
+  elements.ambientAudio.addEventListener("timeupdate", () => {
+    if (soundEnabled && !elements.ambientAudio.paused) {
+      saveMusicState();
+    }
+  });
+
+  // Save music state before page unload
+  window.addEventListener("beforeunload", () => {
+    saveMusicState();
   });
 
   elements.ambientAudio.addEventListener("error", async () => {
@@ -1419,6 +2473,20 @@ async function applyAmbientPlayback() {
   } catch {
     // Browser may block autoplay until explicit user interaction.
   }
+}
+
+function saveMusicState() {
+  if (!elements.ambientAudio) {
+    return;
+  }
+  
+  const musicState = {
+    trackIndex: ambientPlaylistIndex,
+    currentTime: elements.ambientAudio.currentTime,
+    wasPlaying: soundEnabled && !elements.ambientAudio.paused
+  };
+  
+  localStorage.setItem(MUSIC_STATE_KEY, JSON.stringify(musicState));
 }
 
 function syncSoundUi() {
@@ -1551,12 +2619,87 @@ function playerPayload() {
 // FONCTION API EXTERNE SUPPRIMÉE - PLUS D'APPELS RÉSEAU
 // La fonction api() locale (plus haut dans le fichier) est maintenant utilisée exclusivement
 
-function readFileAsDataUrl(file) {
+async function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.addEventListener("load", () => resolve(reader.result));
-    reader.addEventListener("error", reject);
-    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    
+    // For large files (videos), use readAsArrayBuffer for better performance
+    if (file.size > 10 * 1024 * 1024) { // 10MB threshold
+      reader.readAsArrayBuffer(file);
+    } else {
+      reader.readAsDataURL(file);
+    }
+  });
+}
+
+async function processFileForUpload(file) {
+  const maxSize = 50 * 1024 * 1024; // 50MB limit
+  const isVideo = file.type.startsWith('video/');
+  const isImage = file.type.startsWith('image/');
+  
+  // For videos, accept larger files but process them efficiently
+  if (isVideo && file.size > maxSize) {
+    elements.roomStatus.textContent = "Vidéo trop volumineuse. Max 50MB.";
+    return null;
+  }
+  
+  // For images, compress if too large
+  if (isImage && file.size > 5 * 1024 * 1024) { // 5MB threshold for images
+    try {
+      const compressedDataUrl = await compressImage(file);
+      return compressedDataUrl;
+    } catch (error) {
+      console.error("Image compression failed:", error);
+      // Fall back to original file
+    }
+  }
+  
+  // Use optimized file reading
+  return await readFileAsDataUrl(file);
+}
+
+async function compressImage(file) {
+  return new Promise((resolve, reject) => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    
+    img.onload = () => {
+      // Calculate new dimensions (max 1200px width/height)
+      const maxSize = 1200;
+      let width = img.width;
+      let height = img.height;
+      
+      if (width > height) {
+        if (width > maxSize) {
+          height = (height * maxSize) / width;
+          width = maxSize;
+        }
+      } else {
+        if (height > maxSize) {
+          width = (width * maxSize) / height;
+          height = maxSize;
+        }
+      }
+      
+      canvas.width = width;
+      canvas.height = height;
+      
+      ctx.drawImage(img, 0, 0, width, height);
+      
+      // Convert to JPEG with 80% quality for smaller size
+      canvas.toBlob((blob) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      }, 'image/jpeg', 0.8);
+    };
+    
+    img.onerror = reject;
+    img.src = URL.createObjectURL(file);
   });
 }
 
@@ -1582,6 +2725,47 @@ function mediaType(mimeType, fileName = "") {
     return "audio";
   }
   return "text";
+}
+
+function sexCompatibilityScore(mySignId, otherSignId) {
+  // Sex compatibility based on elemental chemistry and passionate connections
+  const fire = ["belier", "lion", "sagittaire"];
+  const earth = ["taureau", "vierge", "capricorne"];
+  const air = ["gemeaux", "balance", "verseau"];
+  const water = ["cancer", "scorpion", "poissons"];
+  
+  const myElement = fire.includes(mySignId) ? "fire" : 
+                   earth.includes(mySignId) ? "earth" : 
+                   air.includes(mySignId) ? "air" : "water";
+  const otherElement = fire.includes(otherSignId) ? "fire" : 
+                      earth.includes(otherSignId) ? "earth" : 
+                      air.includes(otherSignId) ? "air" : "water";
+  
+  // High passion combinations - Contextual and varied
+  if (myElement === "fire" && otherElement === "fire") return { score: 95, reading: "Feu x Feu: Votre énergie combinée crée une tension électrique palpable. Chaque regard est une promesse, chaque touche une étincelle. Vos corps réclament l'un l'autre avec une urgence primitive. Il faut baiser maintenant, sans attendre, comme si votre survie en dépendait." };
+  if (myElement === "water" && otherElement === "water") return { score: 92, reading: "Eau x Eau: Vos fluides se comprennent instinctivement. Une connexion silencieuse mais puissante où chaque caresse résonne profondément. Vos corps dansent une chorégraphie intime. Il faut vous laisser aller à cette fusion naturelle, sans résistance." };
+  if (myElement === "fire" && otherElement === "water") return { score: 88, reading: "Feu x Eau: Votre passion rencontre sa profondeur. La chaleur de votre désir fait évaporer ses inhibitions. Une alchimie parfaite où chaque étreinte est plus intense que la précédente. Il faut explorer cette chimie jusqu'à l'extase totale." };
+  if (myElement === "water" && otherElement === "fire") return { score: 88, reading: "Eau x Feu: Sa flamme réchauffe vos profondeurs. Chaque baiser est une vague de chaleur qui vous submerge. Votre corps répond avec une intensité qui vous surprend. Il faut vous abandonner complètement à cette puissance." };
+  
+  // Good chemistry combinations - Direct and contextual
+  if (myElement === "earth" && otherElement === "water") return { score: 85, reading: "Terre x Eau: Votre stabilité rassure sa fluidité. Une connexion terreuse où chaque mouvement est calculé pour maximiser le plaisir. Vos corps trouvent un rythme naturel. Il faut baiser lentement, profondément, jusqu'à atteindre l'essence même du désir." };
+  if (myElement === "water" && otherElement === "earth") return { score: 85, reading: "Eau x Terre: Votre sensualité trouve son ancrage. Une exploration patiente où chaque découverte est plus intense. Votre corps s'ouvre comme une fleur. Il faut prendre le temps de savourer chaque sensation, chaque frisson." };
+  if (myElement === "air" && otherElement === "fire") return { score: 82, reading: "Air x Feu: Votre imagination alimente sa passion. Des scénarios audacieux prennent vie dans vos ébats. Chaque rencontre est une nouvelle aventure. Il faut oser tous les fantasmes, toutes les positions, sans aucune limite." };
+  if (myElement === "fire" && otherElement === "air") return { score: 82, reading: "Feu x Air: Son esprit stimule votre feu. Des jeux de rôle qui pimentent votre désir. Chaque conversation érotique précède une action plus intense. Il faut parler de tout ce que vous voulez faire, puis le faire." };
+  
+  // Moderate compatibility - Contextual intensity
+  if (myElement === "earth" && otherElement === "earth") return { score: 78, reading: "Terre x Terre: Votre sensualité est pragmatique et intense. Une approche directe du plaisir où chaque geste a un but précis. Vos corps s'explorent avec une curiosité concrète. Il faut baiser fort, sans détour, comme l'exigent vos instincts." };
+  if (myElement === "air" && otherElement === "air") return { score: 75, reading: "Air x Air: Votre connexion mentale crée un désir intellectuel. Des jeux de rôle élaborés où chaque scenario est plus excitant que le précédent. Le plaisir commence dans l'esprit. Il faut explorer toutes les fantasies, même les plus folles." };
+  if (myElement === "air" && otherElement === "water") return { score: 72, reading: "Air x Eau: Vos rêves érotiques prennent forme. Une sexualité poétique où chaque sensation est métamorphosée en fantasme. L'imagination est votre meilleur aphrodisiaque. Il faut laisser votre esprit vagabonder, puis suivre ses désirs." };
+  if (myElement === "water" && otherElement === "air") return { score: 72, reading: "Eau x Air: Votre émotion nourrit sa créativité. Des caresses qui racontent des histoires, des baisers qui peignent des tableaux. Chaque moment est une œuvre d'art érotique. Il faut vous perdre dans cette poésie charnelle." };
+  
+  // Challenging but passionate - Raw and direct
+  if (myElement === "earth" && otherElement === "fire") return { score: 70, reading: "Terre x Feu: Votre friction crée une chaleur explosive. Des tensions qui accumulent une énergie volcanique. Chaque dispute se termine par une étreinte passionnée. Il faut canaliser cette colère en désir, cette frustration en plaisir intense." };
+  if (myElement === "fire" && otherElement === "earth") return { score: 70, reading: "Feu x Terre: Votre impatience rencontre sa résistance. Une lutte de pouvoir qui excite vos sens. Chaque conquête est plus satisfaisante. Il faut dominer ou se laisser dominer, selon l'instant." };
+  if (myElement === "earth" && otherElement === "air") return { score: 68, reading: "Terre x Air: Votre réalité rencontre ses illusions. Une quête pour trouver un terrain d'entente charnel. Des explorations hésitantes qui mènent à des surprises. Il faut expérimenter sans jugement, découvrir ce qui fonctionne vraiment." };
+  if (myElement === "air" && otherElement === "earth") return { score: 68, reading: "Air x Terre: Ses fantasmes rencontrent votre pragmatisme. Une tentative de concilier rêve et réalité. Des essais qui parfois ratent, parfois réussissent magnifiquement. Il faut essayer encore et encore, jusqu'à trouver la formule parfaite." };
+  
+  return { score: 65, reading: "Une sexualité à construire patiemment. Chaque rencontre est une exploration, chaque baiser une découverte. Il faut oser, tester, apprendre. Votre compatibilité se forge dans l'expérimentation sans tabou." };
 }
 
 function compatibilityReading(mySignId, otherSignId) {
@@ -1619,7 +2803,9 @@ function createToken(length) {
 function normalizeRoomId(value) {
   return String(value || "")
     .trim()
-    .replace(/\s+/g, "");
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, "")
+    .slice(0, 12);
 }
 
 async function copyText(text, button, successLabel) {

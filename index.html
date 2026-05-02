@@ -135,18 +135,39 @@
 
       <section class="room-screen screen" id="room-screen" aria-labelledby="room-title">
         <header class="top-bar">
-          <button class="ghost-button" data-back="profile-screen" type="button">Profil</button>
+          <div class="top-bar-left">
+            <button class="ghost-button" data-back="profile-screen" type="button">Profil</button>
+                      </div>
           <div class="room-mini-code">
             <span id="room-player-label">Room privee</span>
             <button class="mini-code-button" id="copy-room" type="button">
               ID <strong id="room-code">----</strong>
+            </button>
+            <button class="help-icon-button" id="help-icon" type="button" aria-label="Aide et règles" title="Voir les règles du jeu">
+              <span class="help-icon">❓</span>
+            </button>
+            <button class="profile-icon-button" id="profile-icon" type="button" aria-label="Utilisateurs" title="Voir les utilisateurs">
+              <span class="profile-icon">👥</span>
+              <span class="user-count" id="user-count">0</span>
             </button>
           </div>
         </header>
 
         <div class="room-layout">
           <section class="room-main">
-            <p class="eyebrow">Gaming room</p>
+            <p class="eyebrow">Gaming room <span class="love-compatibility-indicator" title="Love Compatibility">
+    <span class="love-emoji">💕</span>
+    <span class="love-compatibility-bar">
+      <span class="love-compatibility-fill"></span>
+    </span>
+    <span class="love-compatibility-percentage">0%</span>
+  </span> <span class="sex-compatibility-indicator" title="Sexual Compatibility">
+    <span class="sex-emoji">🍆</span>
+    <span class="sex-compatibility-bar">
+      <span class="sex-compatibility-fill"></span>
+    </span>
+    <span class="sex-compatibility-percentage">0%</span>
+  </span></p>
             <h2 id="room-title">La table est prete.</h2>
 
             <div class="table-arena">
@@ -168,39 +189,217 @@
             </article>
 
             <div class="approval-panel" id="approval-panel"></div>
-          </section>
-
-          <aside class="room-side-panel">
-            <section class="players-panel" aria-labelledby="players-title">
-              <h3 id="players-title">Joueurs dans la salle</h3>
-              <div class="players-list" id="players-list"></div>
-            </section>
-            <section class="compatibility-panel" aria-labelledby="compatibility-title">
-              <h3 id="compatibility-title">Connexion astro</h3>
-              <div id="compatibility-list"></div>
-            </section>
+            
             <section class="chat-panel" aria-labelledby="chat-title">
               <h3 id="chat-title">Chat de la salle</h3>
               <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
               <form class="chat-form" id="chat-form">
                 <input id="chat-input" type="text" maxlength="1200" placeholder="Message..." autocomplete="off">
                 <div class="chat-tools">
-                  <label class="icon-button file-chip" for="chat-file" title="Ajouter un media" aria-label="Ajouter un media">📎</label>
-                  <button class="icon-button record-button" id="chat-record-button" type="button" title="Enregistrer un audio" aria-label="Enregistrer un audio">🎙️</button>
-                  <button class="icon-button send-button" type="submit" title="Envoyer" aria-label="Envoyer">➤</button>
+                  <div class="chat-tools-left">
+                    <label class="icon-button file-chip" for="chat-file" title="Ajouter un media" aria-label="Ajouter un media">📎</label>
+                  </div>
+                  <div class="chat-tools-right">
+                    <button class="icon-button send-button" type="submit" title="Envoyer" aria-label="Envoyer">➤</button>
+                  </div>
                 </div>
                 <input id="chat-file" type="file" accept="image/*,video/*,audio/*,.mp3,.wav,.ogg,.m4a,.aac,.flac,.opus,.weba">
               </form>
               <div class="media-preview" id="media-preview"></div>
             </section>
+          </section>
+
+          <aside class="room-side-panel">
+                        <section class="compatibility-panel" aria-labelledby="compatibility-title">
+              <h3 id="compatibility-title">Connexion astro</h3>
+              <div id="compatibility-list"></div>
+            </section>
           </aside>
         </div>
-        <footer class="privacy-footer inline-footer">
+                <footer class="privacy-footer inline-footer">
           <span>&copy; 2026 Petales &amp; Epines</span>
           <span>Les donnees des joueurs ne sont pas collectees.</span>
         </footer>
       </section>
     </main>
+    <div class="center-toast" id="center-toast" role="status" aria-live="polite"></div>
+    
+    <!-- Users Popup -->
+    <div class="users-popup-backdrop" id="users-popup-backdrop" hidden></div>
+    <div class="users-popup" id="users-popup" hidden>
+        <header class="users-popup-header">
+            <h3>Utilisateurs dans la salle</h3>
+            <button class="ghost-button" id="users-popup-close" type="button">✕</button>
+        </header>
+        <div class="users-popup-content" id="users-popup-content">
+            <!-- Users will be dynamically added here -->
+        </div>
+    </div>
+    
+    <!-- Help Popup -->
+    <div class="help-popup-backdrop" id="help-popup-backdrop" hidden></div>
+    <div class="help-popup" id="help-popup" hidden>
+        <header class="help-popup-header">
+            <h3>🎮 Règles du Jeu</h3>
+            <button class="ghost-button" id="help-popup-close" type="button">✕</button>
+        </header>
+        <div class="help-popup-content">
+            <div class="help-section">
+                <h4>🎯 Objectif</h4>
+                <p>Pétales & Épines est un jeu de vérité et action où les joueurs partagent des confidences et réalisent des défis amusants.</p>
+            </div>
+            
+            <div class="help-section">
+                <h4>🍾 Comment Jouer</h4>
+                <ol>
+                    <li><strong>Spin la bouteille</strong> - Cliquez sur la bouteille pour la faire tourner</li>
+                    <li><strong>Joueur choisi</strong> - La bouteille désigne un joueur au hasard</li>
+                    <li><strong>Pétale ou Épine</strong> - Le joueur choisi doit répondre à une vérité (Pétale) ou réaliser une action (Épine)</li>
+                    <li><strong>Question/Action</strong> - Le joueur a 1 minute pour poser sa question ou décrire son action</li>
+                    <li><strong>Vote</strong> - Les autres joueurs approuvent ou pénalisent</li>
+                    <li><strong>Réalisation</strong> - Le joueur exécute sa vérité ou son action</li>
+                </ol>
+            </div>
+            
+            <div class="help-section">
+                <h4>🌸 Modes de Jeu</h4>
+                <div class="mode-card">
+                    <h5>Pétale et Sourire (Normal)</h5>
+                    <p>Questions douces et actions subtiles. Parfait pour une première approche avec des confidences délicates.</p>
+                </div>
+                <div class="mode-card">
+                    <h5>Désir Sensuel (Hot)</h5>
+                    <p>Questions audacieuses et défis provocants. Pour les plus courageux avec des vérités intenses sans filtre.</p>
+                </div>
+            </div>
+            
+            <div class="help-section">
+                <h4>⚡ Pénalités</h4>
+                <p>Un joueur accumule des pénalités quand :</p>
+                <ul>
+                    <li>Il refuse de répondre ou d'agir</li>
+                    <li>Il triche ou ne suit pas les règles</li>
+                    <li>3 pénalités = Mode Découvert activé</li>
+                </ul>
+            </div>
+            
+            <div class="help-section">
+                <h4>💡 Conseils</h4>
+                <ul>
+                    <li>Soyez honnête dans vos réponses</li>
+                    <li>Respectez les limites de chacun</li>
+                    <li>Créez une ambiance de confiance</li>
+                    <li>Amusez-vous et soyez créatif !</li>
+                </ul>
+            </div>
+            
+            <div class="help-section">
+                <h4>📱 Partager la Salle</h4>
+                <p>Copiez l'ID de la salle et partagez-le à vos amis pour qu'ils puissent vous rejoindre.</p>
+                <button class="primary-button" id="help-copy-room">Copier l'ID de la salle</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Love Compatibility Popup -->
+    <div class="love-compatibility-popup-backdrop" id="love-compatibility-popup-backdrop" hidden></div>
+    <div class="love-compatibility-popup" id="love-compatibility-popup" hidden>
+        <header class="love-compatibility-popup-header">
+            <h3>💕 Compatibilité Amoureuse</h3>
+            <button class="ghost-button" id="love-compatibility-popup-close" type="button">✕</button>
+        </header>
+        <div class="love-compatibility-popup-content">
+            <div class="compatibility-summary">
+                <div class="compatibility-signs">
+                    <span id="love-your-sign">-</span>
+                    <span class="compatibility-vs">VS</span>
+                    <span id="love-partner-sign">-</span>
+                </div>
+                <div class="compatibility-score-display">
+                    <span id="love-compatibility-percentage">0%</span>
+                    <div class="compatibility-bar">
+                        <div id="love-compatibility-bar-fill" class="compatibility-bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="compatibility-description">
+                <h4>Description</h4>
+                <p id="love-compatibility-reading">-</p>
+            </div>
+            
+            <div class="compatibility-recommendations">
+                <h4>💡 Recommandations Amoureuses</h4>
+                <div id="love-compatibility-recommendations-content">
+                    <!-- Recommendations will be added dynamically -->
+                </div>
+            </div>
+            
+            <div class="compatibility-tips">
+                <h4>🎯 Ce que vous devriez faire</h4>
+                <div id="love-compatibility-tips-content">
+                    <!-- Tips will be added dynamically -->
+                </div>
+            </div>
+            
+            <div class="compatibility-warnings">
+                <h4>⚠️ Ce qu'il faut éviter</h4>
+                <div id="love-compatibility-warnings-content">
+                    <!-- Warnings will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sex Compatibility Popup -->
+    <div class="sex-compatibility-popup-backdrop" id="sex-compatibility-popup-backdrop" hidden></div>
+    <div class="sex-compatibility-popup" id="sex-compatibility-popup" hidden>
+        <header class="sex-compatibility-popup-header">
+            <h3>🍆 Compatibilité Sexuelle</h3>
+            <button class="ghost-button" id="sex-compatibility-popup-close" type="button">✕</button>
+        </header>
+        <div class="sex-compatibility-popup-content">
+            <div class="compatibility-summary">
+                <div class="compatibility-signs">
+                    <span id="your-sign">-</span>
+                    <span class="compatibility-vs">VS</span>
+                    <span id="partner-sign">-</span>
+                </div>
+                <div class="compatibility-score-display">
+                    <span id="compatibility-percentage">0%</span>
+                    <div class="compatibility-bar">
+                        <div id="compatibility-bar-fill" class="compatibility-bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="compatibility-description">
+                <h4>Description</h4>
+                <p id="compatibility-reading">-</p>
+            </div>
+            
+            <div class="compatibility-recommendations">
+                <h4>💡 Recommandations</h4>
+                <div id="compatibility-recommendations-content">
+                    <!-- Recommendations will be added dynamically -->
+                </div>
+            </div>
+            
+            <div class="compatibility-tips">
+                <h4>🎯 Ce que vous devriez faire</h4>
+                <div id="compatibility-tips-content">
+                    <!-- Tips will be added dynamically -->
+                </div>
+            </div>
+            
+            <div class="compatibility-warnings">
+                <h4>⚠️ Ce qu'il faut éviter</h4>
+                <div id="compatibility-warnings-content">
+                    <!-- Warnings will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
     <audio id="ambient-audio" loop preload="auto" hidden></audio>
     <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" title="Activer ou couper le son d'ambiance">🔇 Son OFF</button>
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hamburger Toggle Test</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div style="padding: 20px;">
+        <h1>Hamburger Toggle Test</h1>
+        <p>Test hamburger button toggle functionality:</p>
+        
+        <button class="ghost-button" id="hamburger-button" type="button" aria-label="Menu" onclick="const drawer = document.getElementById('drawer'); const backdrop = document.getElementById('drawer-backdrop'); if (drawer.hidden) { drawer.hidden = false; backdrop.hidden = false; console.log('Drawer opened'); } else { drawer.hidden = true; backdrop.hidden = true; console.log('Drawer closed'); }">☰ Toggle Menu</button>
+        
+        <div class="drawer-backdrop" id="drawer-backdrop" hidden onclick="document.getElementById('drawer').hidden = true; document.getElementById('drawer-backdrop').hidden = true;"></div>
+        <aside class="drawer" id="drawer" aria-label="Menu" hidden>
+            <header class="drawer-header">
+                <strong>Menu</strong>
+                <button class="ghost-button" id="drawer-close" type="button" onclick="document.getElementById('drawer').hidden = true; document.getElementById('drawer-backdrop').hidden = true;">Fermer</button>
+            </header>
+            <section class="drawer-section">
+                <h3>Joueurs dans la salle</h3>
+                <div>
+                    <p>♈ joe</p>
+                    <p>27 ans - Belier</p>
+                    <p>Vous - 0 penalite</p>
+                </div>
+            </section>
+            <section class="drawer-section">
+                <h3>Connexion astro</h3>
+                <p>La connexion astro apparaitra quand un autre joueur rejoint la salle.</p>
+            </section>
+        </aside>
+    </div>
+
+    <script>
+        console.log("Toggle test page loaded");
+        
+        // Test JavaScript toggle as backup
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger-button");
+            const drawer = document.getElementById("drawer");
+            const backdrop = document.getElementById("drawer-backdrop");
+            
+            if (hamburger && !hamburger.hasAttribute('data-js-toggle')) {
+                hamburger.addEventListener("click", () => {
+                    console.log("JavaScript toggle clicked");
+                    if (drawer.hidden) {
+                        drawer.hidden = false;
+                        backdrop.hidden = false;
+                        console.log("Drawer opened via JS");
+                    } else {
+                        drawer.hidden = true;
+                        backdrop.hidden = true;
+                        console.log("Drawer closed via JS");
+                    }
+                });
+                hamburger.setAttribute('data-js-toggle', 'true');
+            }
+        });
+    </script>
+</body>
+</html>

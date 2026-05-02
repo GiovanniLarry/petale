@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Button Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .ghost-button {
+            min-height: 48px;
+            border-radius: 8px;
+            padding: 0 18px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: white;
+            background: rgba(255, 255, 255, 0.11);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            margin: 10px;
+        }
+        .drawer-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 80;
+            background: rgba(0, 0, 0, 0.52);
+        }
+        .drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 320px;
+            height: 100%;
+            z-index: 81;
+            padding: 14px;
+            background: #25101c;
+            color: white;
+        }
+        .drawer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button Test</h1>
+    <p>Test both buttons:</p>
+    
+    <button class="ghost-button" id="hamburger-button" type="button" aria-label="Menu">☰ Open Drawer</button>
+    
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="drawer" id="drawer" hidden>
+        <header class="drawer-header">
+            <strong>Menu</strong>
+            <button class="ghost-button" id="drawer-close" type="button">Fermer</button>
+        </header>
+        <section>
+            <h3>Test Content</h3>
+            <p>Drawer is open!</p>
+        </section>
+    </aside>
+
+    <script>
+        // Test with JavaScript event listeners
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("DOM loaded");
+            
+            const hamburger = document.getElementById("hamburger-button");
+            const drawerClose = document.getElementById("drawer-close");
+            const drawer = document.getElementById("drawer");
+            const backdrop = document.getElementById("drawer-backdrop");
+            
+            console.log("Elements found:", { hamburger, drawerClose, drawer, backdrop });
+            
+            const openDrawer = () => {
+                console.log("Opening drawer via JS");
+                drawer.hidden = false;
+                backdrop.hidden = false;
+            };
+            
+            const closeDrawer = () => {
+                console.log("Closing drawer via JS");
+                drawer.hidden = true;
+                backdrop.hidden = true;
+            };
+            
+            hamburger.addEventListener("click", (e) => {
+                console.log("Hamburger clicked via event listener", e);
+                openDrawer();
+            });
+            
+            drawerClose.addEventListener("click", (e) => {
+                console.log("Close button clicked via event listener", e);
+                closeDrawer();
+            });
+            
+            backdrop.addEventListener("click", closeDrawer);
+        });
+    </script>
+</body>
+</html>

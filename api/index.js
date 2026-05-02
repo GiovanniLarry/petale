@@ -252,7 +252,11 @@ function readJson(req) {
 }
 
 function normalizeRoomId(value) {
-  return String(value || "").trim().replace(/\s+/g, "");
+  return String(value || "")
+    .trim()
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, "")
+    .slice(0, 12);
 }
 
 function normalizeGameMode(value) {

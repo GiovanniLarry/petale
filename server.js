@@ -582,7 +582,9 @@ function createToken(length) {
 function normalizeRoomId(value) {
   return String(value || "")
     .trim()
-    .replace(/\s+/g, "");
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, "")
+    .slice(0, 12);
 }
 
 function normalizeGameMode(value) {
@@ -606,7 +608,7 @@ function schedulePromptTimeout(roomId, roundId) {
     applyAutoPromptForChoosingRound(room);
     room.updatedAt = Date.now();
     decorateRoom(room);
-  }, 30_000);
+  }, 60_000);
   promptTimeouts.set(roomId, timeoutId);
 }
 

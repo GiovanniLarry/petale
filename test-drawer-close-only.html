@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drawer Close Test</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div style="padding: 20px;">
+        <h1>Drawer Close Button Test</h1>
+        <p>Testing drawer close button:</p>
+        
+        <button class="ghost-button" onclick="console.log('Opening drawer'); document.getElementById('drawer').hidden = false; document.getElementById('drawer-backdrop').hidden = false;">Open Drawer</button>
+        
+        <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+        <aside class="drawer" id="drawer" aria-label="Menu" hidden>
+            <header class="drawer-header">
+                <strong>Menu</strong>
+                <button class="ghost-button" id="drawer-close" type="button" onclick="console.log('Drawer close clicked'); console.log('Before - Drawer hidden:', document.getElementById('drawer').hidden); console.log('Before - Backdrop hidden:', document.getElementById('drawer-backdrop').hidden); document.getElementById('drawer').hidden = true; document.getElementById('drawer-backdrop').hidden = true; console.log('After - Drawer hidden:', document.getElementById('drawer').hidden); console.log('After - Backdrop hidden:', document.getElementById('drawer-backdrop').hidden);">Fermer</button>
+            </header>
+            <section class="drawer-section">
+                <h3>Joueurs dans la salle</h3>
+                <p>Test content</p>
+            </section>
+        </aside>
+    </div>
+
+    <script>
+        console.log("Drawer close test page loaded");
+        
+        // Also test with JavaScript event listener
+        document.addEventListener("DOMContentLoaded", () => {
+            const closeBtn = document.getElementById("drawer-close");
+            if (closeBtn) {
+                closeBtn.addEventListener("click", () => {
+                    console.log("JavaScript close button clicked");
+                    document.getElementById('drawer').hidden = true;
+                    document.getElementById('drawer-backdrop').hidden = true;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

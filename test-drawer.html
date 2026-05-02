@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drawer Test</title>
+    <style>
+        .drawer-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 80;
+            background: rgba(0, 0, 0, 0.52);
+        }
+        
+        .drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 320px;
+            height: 100%;
+            z-index: 81;
+            padding: 14px;
+            background: #25101c;
+            color: white;
+        }
+        
+        .drawer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .ghost-button {
+            min-height: 48px;
+            border-radius: 8px;
+            padding: 0 18px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: white;
+            background: rgba(255, 255, 255, 0.11);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+        }
+        
+        .ghost-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .test-button {
+            margin: 20px;
+            padding: 10px 20px;
+            background: #ff477e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="test-button" onclick="openDrawer()">Open Drawer</button>
+    
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden onclick="closeDrawer()"></div>
+    <aside class="drawer" id="drawer" hidden>
+        <header class="drawer-header">
+            <strong>Menu</strong>
+            <button class="ghost-button" id="drawer-close" type="button" onclick="closeDrawer()">Fermer</button>
+        </header>
+        <section class="drawer-section">
+            <h3>Test Content</h3>
+            <p>This is a test to verify the drawer close button works.</p>
+        </section>
+    </aside>
+
+    <script>
+        function openDrawer() {
+            console.log("Opening drawer");
+            document.getElementById("drawer").hidden = false;
+            document.getElementById("drawer-backdrop").hidden = false;
+        }
+        
+        function closeDrawer() {
+            console.log("Closing drawer");
+            document.getElementById("drawer").hidden = true;
+            document.getElementById("drawer-backdrop").hidden = true;
+        }
+        
+        // Test the button directly
+        document.addEventListener("DOMContentLoaded", () => {
+            const closeBtn = document.getElementById("drawer-close");
+            console.log("Close button found:", closeBtn);
+            
+            closeBtn.addEventListener("click", () => {
+                console.log("Close button clicked via event listener");
+                closeDrawer();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Button Test</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div style="padding: 20px;">
+        <h1>Button Test - Petales & Epines</h1>
+        <p>Testing hamburger and drawer close buttons:</p>
+        
+        <button class="ghost-button" id="hamburger-button" type="button" aria-label="Menu" onclick="console.log('Hamburger inline click'); document.getElementById('drawer').hidden = false; document.getElementById('drawer-backdrop').hidden = false;">☰ Open Drawer</button>
+        
+        <div class="drawer-backdrop" id="drawer-backdrop" hidden onclick="console.log('Backdrop clicked'); document.getElementById('drawer').hidden = true; document.getElementById('drawer-backdrop').hidden = true;"></div>
+        <aside class="drawer" id="drawer" aria-label="Menu" hidden>
+            <header class="drawer-header">
+                <strong>Menu</strong>
+                <button class="ghost-button" id="drawer-close" type="button" onclick="console.log('Drawer close inline click'); document.getElementById('drawer').hidden = true; document.getElementById('drawer-backdrop').hidden = true;">Fermer</button>
+            </header>
+            <section class="drawer-section">
+                <h3>Test Content</h3>
+                <p>Drawer is working!</p>
+            </section>
+        </aside>
+    </div>
+
+    <script>
+        console.log("Test page loaded");
+        
+        // Test JavaScript event listeners as backup
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("DOM loaded in test page");
+            
+            const hamburger = document.getElementById("hamburger-button");
+            const drawerClose = document.getElementById("drawer-close");
+            const drawer = document.getElementById("drawer");
+            const backdrop = document.getElementById("drawer-backdrop");
+            
+            console.log("Test elements found:", { 
+                hamburger: !!hamburger, 
+                drawerClose: !!drawerClose, 
+                drawer: !!drawer, 
+                backdrop: !!backdrop 
+            });
+            
+            // Add JavaScript event listeners as backup
+            if (hamburger && !hamburger.hasAttribute('data-js-listener')) {
+                hamburger.addEventListener("click", (e) => {
+                    console.log("Hamburger clicked via JS event listener", e);
+                    drawer.hidden = false;
+                    backdrop.hidden = false;
+                });
+                hamburger.setAttribute('data-js-listener', 'true');
+            }
+            
+            if (drawerClose && !drawerClose.hasAttribute('data-js-listener')) {
+                drawerClose.addEventListener("click", (e) => {
+                    console.log("Close button clicked via JS event listener", e);
+                    drawer.hidden = true;
+                    backdrop.hidden = true;
+                });
+                drawerClose.setAttribute('data-js-listener', 'true');
+            }
+            
+            if (backdrop && !backdrop.hasAttribute('data-js-listener')) {
+                backdrop.addEventListener("click", (e) => {
+                    console.log("Backdrop clicked via JS event listener", e);
+                    drawer.hidden = true;
+                    backdrop.hidden = true;
+                });
+                backdrop.setAttribute('data-js-listener', 'true');
+            }
+        });
+    </script>
+</body>
+</html>
